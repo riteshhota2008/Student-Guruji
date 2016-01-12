@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Student Guruji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../Css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../../Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Css/styles.css">
+    <link rel="stylesheet" href="../../Css/style2.css">
+
+    <!-- Css Menu -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="../../Js/cssmenu.js"></script>
+
+    <!-- Css Menu End -->
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+
+    <!-- Font Awesome End -->
+
+    <!-- Flex Slider -->
+
+    <link rel="stylesheet" href="../../Css/flexslider.css" type="text/css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../Js/jquery.flexslider.js"></script>
+    <script src="flexSlider/jquery.flexslider-min.js"></script>
+
+    <!-- Flex Slider End -->
+
+    <!-- Scroll to top css -->
+
+    <!--<link rel="stylesheet" href="scrolltotop.css" type="text/css">-->
+    <script src="../../Js/scrolltotop.js"></script>
+
+    <!-- Scroll to top css end -->
+
+    <!-- Flex slider Js -->
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+
+            //simple FlexSlider call
+            $('.flexslider').flexslider();
+
+            // more complex call
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlsContainer: ".flex-container",
+                start: function(slider) {
+                    $('.total-slides').text(slider.count);
+                },
+                after: function(slider) {
+                    $('.current-slide').text(slider.currentSlide);
+                }
+            });
+        });
+    </script>
+
+    <!-- Flex Slider Js End -->
+
+    <style>
+
+        .text-muted {
+            width:90%;
+            margin: auto;
+        }
+
+        #buttons {
+            margin-left: 0px;
+        }
+
+        .page-header {
+            width: 100%;
+            /*margin-left: 70px;*/
+        }
+
+        .move-right {
+            margin-left: 0;
+        }
+
+        .move-more-right {
+            margin-left: 80px;
+        }
+
+        /*#home {
+            background-image: url("img/srm-university-bg-image.jpg");
+            height: 750px;
+            width: 1350px;
+        }*/
+
+        .btn-default {
+            height: 31px;/*For nav search bar */
+        }
+
+
+    </style>
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <![endif]-->
+    <script>
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23019901-1']);
+        _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+
+    <script>
+        $("#cssmenu").menumaker({
+            title: "Menu",
+            format: "multitoggle"
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+<!--<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="../" class="navbar-brand">Student Guruji</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Courses <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="themes">
+            <!--<li><a href="../default/">Default</a></li>-->
+<!--<li class="divider"></li>-->
+<!--        <li><a href="../cerulean/">Engineering</a></li>
+        <li><a href="../cosmo/">Medical</a></li>
+        <li><a href="../cyborg/">MBA</a></li>
+        <li><a href="../darkly/">Hotel Management</a></li>
+        <li><a href="../flatly/">Banking & Finance</a></li>
+        <li><a href="../journal/">Science</a></li>
+        <li><a href="../lumen/">Arts</a></li>
+        <li><a href="../paper/">Commerce</a></li>
+        <li><a href="../readable/">Fasion Designing</a></li>
+        <li><a href="../sandstone/">Film Institute</a></li>
+
+
+
+
+
+    <li>
+
+
+        </ul>
+      </div>
+    </li>         -->
+<!--<li>
+  <a href="http://news.bootswatch.com">Blog</a>
+</li>
+<li class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Yeti <span class="caret"></span></a>
+  <ul class="dropdown-menu" aria-labelledby="download">
+    <li><a href="http://jsfiddle.net/bootswatch/vdr1vx77/">Open Sandbox</a></li>
+    <li class="divider"></li>
+    <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
+    <li><a href="./bootstrap.css">bootstrap.css</a></li>
+    <li class="divider"></li>
+    <li><a href="./variables.less">variables.less</a></li>
+    <li><a href="./bootswatch.less">bootswatch.less</a></li>
+    <li class="divider"></li>
+    <li><a href="./_variables.scss">_variables.scss</a></li>
+    <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
+  </ul>
+</li>                 -->
+<!--     </ul>                     -->
+
+<!--      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
+        <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
+        <li>
+          <div id='cssmenu'>
+            <ul>
+              <!--<li class='active'><a href='index.html'>Home</a></li>-->
+<!--            <li><a href='#'>Products</a>
+              <ul>
+                <li><a href='#'>Product 1</a>
+                  <ul>
+                    <li><a href='#'>Sub Item</a></li>
+                    <li><a href='#'>Sub Item</a></li>
+                  </ul>
+                </li>
+                <!--<li><a href='#'>Product 2</a>
+                  <ul>
+                    <li><a href='#'>Sub Item</a></li>
+                    <li><a href='#'>Sub Item</a></li>
+                  </ul>
+                </li>-->
+<!--             </ul>
+           </li>
+
+
+           <!--<li><a href='#'>About</a></li>
+           <li><a href='#'>Contact</a></li>-->
+<!--          </ul>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</div>
+</div>     -->
+
+
+
+<!-- <div class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <div id='cssmenu'>
+ <ul>
+
+   <div class="navbar-header">
+   <li><a href='#' class="navbar-brand">Student Guruji</a></li> </div>
+           <li><a href='#'>Sub Product</a></li>
+         </ul>
+       </li>
+       <li><a href='#'>Product 2</a>
+         <ul>
+           <li><a href='#'>Sub Product</a></li>
+           <li><a href='#'>Sub Product</a></li>
+         </ul>
+       </li>
+     </ul>
+   </li>
+   <li><a href='#'>About</a></li>
+   <li><a href='#'>Contact</a></li>
+ </ul>
+</div>
+ </div>
+     </div>
+   </div> -->
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <div id='cssmenu'>
+                <ul>
+                    <li><a href='#'>Student Guruji</a></li>
+                    <li class='active'><a href='#'>Courses</a>
+                        <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Courses <span class="caret"></span></a>-->
+                        <ul>
+                            <li><a href="../cerulean/">Engineering</a></li>
+                            <li><a href="../cosmo/">Medical</a></li>
+                            <li><a href="../cyborg/">MBA</a></li>
+                            <li><a href="../darkly/">Hotel Management</a></li>
+                            <li><a href="../flatly/">Banking & Finance</a></li>
+                            <li><a href="../journal/">Science</a></li>
+                            <li><a href="../lumen/">Arts</a></li>
+                            <li><a href="../paper/">Commerce</a></li>
+                            <li><a href="../readable/">Fasion Designing</a></li>
+                            <li><a href="../sandstone/">Film Institute</a></li>
+                        </ul>
+
+
+
+
+
+                        <!--<ul>
+                          <li><a href='#'>Product 1</a>
+                            <ul>
+                              <li><a href='#'>Sub Product</a></li>
+                              <li><a href='#'>Sub Product</a></li>
+                            </ul>
+                          </li>
+                          <li><a href='#'>Product 2</a>
+                            <ul>
+                              <li><a href='#'>Sub Product</a></li>
+                              <li><a href='#'>Sub Product</a></li>
+                            </ul>
+                          </li>
+                        </ul>-->
+
+                    <li><a href='#'>Colleges</a>
+                        <ul>
+                            <li><a href='#'>Colleges in Chennai</a>
+                                <ul>
+                                    <li><a href='IITchennai.html'>IIT Madras</a></li>
+                                    <li><a href='#'>IIM Trichy</a></li>
+                                    <li><a href='#'>IHM Chennai</a></li>
+                                    <li><a href='#'>NIT Trichy</a></li>
+                                    <li><a href='Srmuniversity.html'>SRM University</a></li>
+                                    <li><a href='Vituniversity.html'>VIT University</a></li>
+                                    <li><a href='#'>More</a></li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li><a href='#'>Colleges in Mumbai</a>
+                                <ul>
+                                    <li><a href="#">IIT Bombay</a></li>
+                                    <li><a href='#'>IHM Mumbai</a></li>
+                                    <li><a href='#'>NMIMS University</a></li>
+                                    <li><a href='#'>Amity University</a></li>
+                                    <li><a href='#'>D.Y. Patil University</a></li>
+                                    <li><a href='#'>Don Bosco Institute</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Kolkata</a>
+                                <ul>
+                                    <li><a href='#'>IIT Kharagpur</a></li>
+                                    <li><a href='#'>NIT Durgapur</a></li>
+                                    <li><a href='#'>IIM Calcutta</a></li>
+                                    <li><a href='#'>Jadavpur University</a></li>
+                                    <li><a href='#'>Goenka College</a></li>
+                                    <li><a href='#'>Adamas University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Delhi</a>
+                                <ul>
+                                    <li><a href='#'>IIT Delhi</a></li>
+                                    <li><a href='#'>IHM</a>
+                                    <li><a href='#'>AIIMS</a></li>
+                                    <li><a href='#'>NIT Delhi</a></li>
+                                    <li><a href='#'>NIIT University</a></li>
+                                    <li><a href='#'>Apeejay University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Bangalore</a>
+                                <ul>
+                                    <li><a href='#'>IIM Bangalore</a></li>
+                                    <li><a href='#'>Manipal University</a></li>
+                                    <li><a href='#'>Presidency University</a></li>
+                                    <li><a href='#'>Reva University</a></li>
+                                    <li><a href='#'>PES University</a></li>
+                                    <li><a href='#'>Christ University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Pune</a>
+                                <ul>
+                                    <li><a href='#'>Shastri Institute</a></li>
+                                    <li><a href='#'>IIAEIT</a></li>
+                                    <li><a href='#'>Symbiosis Institute</a></li>
+                                    <li><a href='#'>Maharashtra Institute</a></li>
+                                    <li><a href='#'>MIT Academy</a></li>
+                                    <li><a href='#'>Vishwakarma Institute</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in <!--<br></br>-->Ahmedab</a> <!-- spelling-->
+                                <ul>
+                                    <li><a href='#'>IIM Ahmedabad</a></li>
+                                    <li><a href='#'>IIT Gandhinagar</a></li>
+                                    <li><a href='#'> Nirma University</a></li>
+                                    <li><a href='#'>Indus University</a></li>
+                                    <li><a href='#'>Adani Institute</a></li>
+                                    <li><a href='#'>Navrangpura Institute</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Andhra</a>
+                                <ul>
+                                    <li><a href='#'>IIM Visakhapatnam</a></li>
+                                    <li><a href='#'>IIT Tirupati</a></li>
+                                    <li><a href='#'>IHM Hyderabad</a></li>
+                                    <li><a href='#'>NIT Warangal</a></li>
+                                    <li><a href='#'>IIIT Hyderabad</a></li>
+                                    <li><a href='#'>Gitam University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Bhubanes</a>
+                                <ul>
+                                    <li><a href='#'>IIT Bhubaneswar</a></li>
+                                    <li><a href='#'>NIT Rourkela</a></li>
+                                    <li><a href='#'>AIIMS</a></li>
+                                    <li><a href='#'>IIIT Bhubaneswar</a></li>
+                                    <li><a href='#'>KIIT University</a></li>
+                                    <li><a href='#'>VSS University Burla</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in U.P</a>
+                                <ul>
+                                    <li><a href='#'>IIT Kanpur</a></li>
+                                    <li><a href='#'>IHM Lucknow</a></li>
+                                    <li><a href='#'>NIT Allahabad</a></li>
+                                    <li><a href='#'>IIIT Allahabad</a></li>
+                                    <li><a href='#'>Amity University,</a></li>
+                                    <li><a href='#'>Integral University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+
+
+
+                        </ul>
+                    </li>
+
+                    <li><a href='#'>Reviews</a></li>
+                    <!--<li><a href='#'>Register</a></li>
+                    <li><a href='#'>Log In</a></li>-->
+
+
+
+                    <!--<li><a href="reviews.php">Reviews</a></li> <!-- new added -->
+                    <li><a href="register.php" class="nav navbar-nav navbar-right">Register</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" class="nav navbar-nav navbar-right" target="_blank">Log In <strong class="caret"></strong></a>
+                        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                            <form action="index.php" method="post">
+                                Username:<br />
+                                <input type="text" name="username" value="<?php echo $submitted_username; ?>" />
+                                <br /><br />
+                                Password:<br />
+                                <input type="password" name="password" value="" />
+                                <br /><br />
+                                <input type="submit" class="btn btn-info" value="Login" />
+                            </form>
+                        </div>
+                    </li>
+
+
+
+
+
+
+                    <!--<div class="navbar navbar-default navbar-fixed-left">
+                      <div class="container">
+                        <div class="navbar-header">
+                          <div id='cssmenu'>
+                            <ul>
+                              <li><a href='#'>Register</a></li>
+                              <li class='active'><a href='#'>Log In</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container"><br><br><br>
+
+    <!-- <div class="page-header" id="banner"> -->
+    <div class="row">
+        <div class="col-lg-10 col-md-7 col-sm-6">
+            <div class="col-lg-2 col-md-6 col-sm-6"><img src="../../Logo/Engineering/Odisha/Veer%20Surendra%20Sai%20University%20of%20Technology_Logo.jpeg" width="140" height="140" style="margin: 10px 0 0 -10px;border: 1px solid"/></div>
+            <h1>Veer Surendra Sai University of Technology</h1>
+            <p class="lead">Burla, Odisha | <a href="http://www.vssut.ac.in">www.vssut.ac.in</a> | Estd: 1956 <br>Autonomous College
+                | Contact : <a href="tel:+916632430211">0663 2430211</a></p>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-5 col-sm-6">
+           <div class="sponsor">
+             <a href="http://www.shopify.com/?ref=bootswatch" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);">
+               <img src="../assets/img/shopify.png" alt="Shopify" width="180" height="150" onload="_gaq.push(['_trackEvent', 'banner', 'impression', 'shopify']);">
+             </a>
+           </div>
+         </div>-->
+    </div>
+</div>
+
+
+<!-- Navbar
+================================================== -->
+
+
+
+<!-- <div class="bs-docs-section clearfix">
+   <div class="row">
+     <div class="col-lg-12">
+       <div class="page-header">
+         <h1 id="navbar">Navbar</h1>
+       </div>
+
+       <div class="bs-component">
+         <nav class="navbar navbar-default">
+           <div class="container-fluid">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Brand</a>
+             </div>
+
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                 <li><a href="#">Link</a></li>
+                 <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                   <ul class="dropdown-menu" role="menu">
+                     <li><a href="#">Action</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">Separated link</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">One more separated link</a></li>
+                   </ul>
+                 </li>
+               </ul>
+               <form class="navbar-form navbar-left" role="search">
+                 <div class="form-group">
+                   <input type="text" class="form-control" placeholder="Search">
+                 </div>
+                 <button type="submit" class="btn btn-default">Submit</button>
+               </form>
+               <ul class="nav navbar-nav navbar-right">
+                 <li><a href="#">Link</a></li>
+               </ul>
+             </div>
+           </div>
+         </nav>
+       </div>
+
+       <div class="bs-component">
+         <nav class="navbar navbar-inverse">
+           <div class="container-fluid">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Brand</a>
+             </div>
+
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+               <ul class="nav navbar-nav">
+                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                 <li><a href="#">Link</a></li>
+                 <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                   <ul class="dropdown-menu" role="menu">
+                     <li><a href="#">Action</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">Separated link</a></li>
+                     <li class="divider"></li>
+                     <li><a href="#">One more separated link</a></li>
+                   </ul>
+                 </li>
+               </ul>
+               <form class="navbar-form navbar-left" role="search">
+                 <div class="form-group">
+                   <input type="text" class="form-control" placeholder="Search">
+                 </div>
+                 <button type="submit" class="btn btn-default">Submit</button>
+               </form>
+               <ul class="nav navbar-nav navbar-right">
+                 <li><a href="#">Link</a></li>
+               </ul>
+             </div>
+           </div>
+         </nav>
+       </div><!-- /example -->
+
+</div>
+</div>
+</div>
+
+
+<!-- About -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1>About</h1>
+            </div>
+        </div>
+    </div>
+
+    <p>Veer Surendra Sai University of Technology (VSSUT), formerly known as the University College of Engineering, Burla, is a University Grants Commission (India) (UGC) recognised Unitary Technical University located in Burla, Sambalpur, Odisha, India. It is the best institute of technical education running under government of the Indian state of Odisha, .It is followed by International Institute of Technology, Bhubaneswar and College of Engineering and Technology, Bhubaneswar.It is the oldest degree-granting engineering institute in Odisha, founded as the University College of Engineering (UCE) in 1956. UCE Burla was officially renamed as Veer Surendra Sai University of Technology on 12 February 2009, as a result of a move by the Government of Odisha to accord it with the status of a unitary university. Before getting University status it was the 1st educational institute in Odisha to be granted 'Autonomous' status in the year 1991. In 2012 VSSUT was awarded 12B status by UGC.</p>
+
+    <!--</div>-->
+
+    <!--<div class="row">
+        <div class="col-lg-7">
+
+            <p class="bs-component">
+                <a href="#" class="btn btn-default">Default</a>
+                <a href="#" class="btn btn-primary">Primary</a>
+                <a href="#" class="btn btn-success">Success</a>
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-warning">Warning</a>
+                <a href="#" class="btn btn-danger">Danger</a>
+                <a href="#" class="btn btn-link">Link</a>
+            </p>
+
+            <p class="bs-component">
+                <a href="#" class="btn btn-default disabled">Default</a>
+                <a href="#" class="btn btn-primary disabled">Primary</a>
+                <a href="#" class="btn btn-success disabled">Success</a>
+                <a href="#" class="btn btn-info disabled">Info</a>
+                <a href="#" class="btn btn-warning disabled">Warning</a>
+                <a href="#" class="btn btn-danger disabled">Danger</a>
+                <a href="#" class="btn btn-link disabled">Link</a>
+            </p>
+
+
+            <div style="margin-bottom: 15px;">
+                <div class="btn-toolbar bs-component" style="margin: 0;">
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-default">Default</a>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary">Primary</a>
+                        <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-success">Success</a>
+                        <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-info">Info</a>
+                        <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-warning">Warning</a>
+                        <a href="#" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="bs-component">
+                <a href="#" class="btn btn-primary btn-lg">Large button</a>
+                <a href="#" class="btn btn-primary">Default button</a>
+                <a href="#" class="btn btn-primary btn-sm">Small button</a>
+                <a href="#" class="btn btn-primary btn-xs">Mini button</a>
+            </p>
+
+        </div>
+        <div class="col-lg-5">
+
+            <p class="bs-component">
+                <a href="#" class="btn btn-default btn-lg btn-block">Block level button</a>
+            </p>
+
+
+            <div class="bs-component" style="margin-bottom: 15px;">
+                <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-default">Left</a>
+                    <a href="#" class="btn btn-default">Middle</a>
+                    <a href="#" class="btn btn-default">Right</a>
+                </div>
+            </div>
+
+            <div class="bs-component" style="margin-bottom: 15px;">
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-default">1</a>
+                        <a href="#" class="btn btn-default">2</a>
+                        <a href="#" class="btn btn-default">3</a>
+                        <a href="#" class="btn btn-default">4</a>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-default">5</a>
+                        <a href="#" class="btn btn-default">6</a>
+                        <a href="#" class="btn btn-default">7</a>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-default">8</a>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                Dropdown
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dropdown link</a></li>
+                                <li><a href="#">Dropdown link</a></li>
+                                <li><a href="#">Dropdown link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bs-component">
+                <div class="btn-group-vertical">
+                    <a href="#" class="btn btn-default">Button</a>
+                    <a href="#" class="btn btn-default">Button</a>
+                    <a href="#" class="btn btn-default">Button</a>
+                    <a href="#" class="btn btn-default">Button</a>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+</div>
+
+<!-- Flex Slider -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1>Photos</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="../../Images/Engineering/Odisha/VSSUT/VSSUT-1.jpg"/></li>
+            <li><img src="../../Images/Engineering/Odisha/VSSUT/VSSUT-2.jpg"/></li>
+            <li><img src="../../Images/Engineering/Odisha/VSSUT/VSSUT-3.jpg"/></li>
+        </ul>
+    </div>
+
+    <!-- Flex Slider End -->
+
+
+    <!-- Courses Offered -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1>Courses Offered</h1>
+                </div>
+            </div>
+        </div>
+
+    <div class="move-right">
+
+        <div class="col-lg-3">
+            <div class="bs-component">
+                <h3>MBA</h3>
+                <p>Degree: MBA</p>
+                <p>Course Fee(in lakh): 5</p>
+                <p>Duration(in year): 2</p>
+                <p>Mode: Full time</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="move-right">
+
+        <div class="col-lg-3">
+            <div class="bs-component">
+                <h3>Bachelor in Technology</h3>
+                <p>Degree: B.TECH</p>
+                <p>Course Fee(in lakh): 8</p>
+                <p>Duration(in year): 4</p>
+                <p>Mode: Full time</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="move-right">
+
+        <div class="col-lg-3">
+            <div class="bs-component">
+                <h3>Master in Technology</h3>
+                <p>Degree: M.TECH</p>
+                <p>Course Fee(in lakh): 4</p>
+                <p>Duration(in year): 2</p>
+                <p>Mode: Full time</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="move-right">
+
+        <div class="col-lg-3">
+            <div class="bs-component">
+                <h3>B.Com. Commerce</h3>
+                <p>Approval: UGC</p>
+                <p>Course Fee(in lakh): 1.2</p>
+                <p>Duration(in year): 3</p>
+                <p>Mode: Full time</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="col-lg-4">
+        <div class="bs-component">
+            <h2>Emphasis classes</h2>
+            <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+            <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+    </div> -->
+</div>
+
+
+    <!-- Eligibility -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Eligibility Criteria</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li><p><h3>B.Tech.</h3></p></li>
+        <p>A pass in 10+2 or its equivalent.</p>
+        <li>For all programs: Minimum 70% aggregate in Mathematics, Physics & Chemistry.</li>
+        <li>For Bioinformatics, Biotechnology, Biomedical Engineering and Genetic Engineering: Minimum 70% aggregate in Mathematics / Biology, Physics and Chemistry.</li>
+    </ul>
+
+
+    <!-- Admission Procedure -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Admission Procedure</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li>Admissions are made through JEE Mains rank followed by counselling.</li>
+    </ul>
+
+
+
+    <!-- Why Join -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                <h1 id="type">Why Join Veer Surendra Sai University of Technology?</h1>
+            </div>
+        </div>
+    </div>
+        </div>
+
+    <ul>
+        <li>Approved by UGC.</li>
+        <li>Well qualified faculties.</li>
+        <li>Excellent infrastructure.</li>
+        <li>Placement assistance.</li>
+    </ul>
+
+
+    <!-- Placements -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Placements</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li>The institute has an active Training and Placement cell which places its students in various organizations.</li>
+        <li>70% of students take up coveted positions in corporates, 20% go overseas for higher studies in reputed institutions like MIT, Stanford, Carnegie Mellon, Cornell and Cambridge, and 10% turn into entrepreneurs.</li>
+        <li>Maximum Salary offered is INR 32 Lakh.</li>
+        <li>4280 students placed in 265 companies.</li>
+    </ul>
+
+
+    <!-- Top Recruiting companies -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Top Recruiting Companies</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li>ata Motors</li>
+        <li>JSL</li>
+        <li>L&T IES</li>
+        <li>Capgemini</li>
+        <li>Cummins India</li>
+        <li>SPCL</li>
+        <li>Ashok Leyland</li>
+        <li>Honda</li>
+        <li>Soma</li>
+        <li>Maruti</li>
+        <li>Wipro</li>
+        <li>Infosys</li>
+    </ul>
+
+
+    <!-- Ranking and awards -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Rankings & Awards</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li>Ranked No.1 - Times of India 2014.</li>
+        <li>Ministry of HRD places SRM University in Category A The Ministry of Human Resource Development(MHRD), Department of Higher Education, Government of India, has placed SRM University in highest Category 'A'.</li>
+        <li>SRM Institute of Science and Technology, Chennai is ranked no: 1 among the private institutes in India by Times Engineering Survey.</li>
+        <li>The week magazine has ranked SRM University as No: 2 among the private Universities.</li>
+        <li>SRM is ranked India's No.1 by India Today(Factual Ranking 2013).</li>
+        <li>Ranked No.1 Private University - Deccan chronicle 2012.</li>
+        <li>DNA-ZEE news ranked SRM universities among the top universities in India.</li>
+    </ul>
+
+
+    <!-- Infrastructure -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Infrastructure</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li>Computer Centre.</li>
+        <li>Library.</li>
+        <li>Internet Centre and workshop.</li>
+        <li>Conference hall.</li>
+        <li>Recreational amenities.</li>
+        <li>Other utility services.</li>
+    </ul>
+
+
+    <!-- Contact -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Contact</h1>
+                </div>
+            </div>
+        </div>
+
+        <p>&nbsp;<i class="fa fa-map-marker fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: Burla, Sambalpur, Odisha 768018</p>
+        <p><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email: info@vssut.ac.in</p>
+        <p><i class="fa fa-laptop fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Website: www.vssut.ac.in</p>
+        <p><i class="fa fa-download fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Downlaod Brochure</p>
+    </div>
+
+    <!-- Location -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Location</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section id="contactssss" class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.2658096647538!2d83.90175561476165!3d21.49730597699379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213da4ec28af2d%3A0xb33a5cc9af8c33c7!2sVeer+Surendra+Sai+University+of+Technology%2C+Burla!5e0!3m2!1sen!2sin!4v1447867718700" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <br />
+        <small>
+            <a href="https://www.google.co.in/maps/place/Veer+Surendra+Sai+University+of+Technology,+Burla/@21.497306,83.9017556,17z/data=!4m5!1m2!2m1!1sVeer+Surendra+Sai+University+of+Technology!3m1!1s0x3a213da4ec28af2d:0xb33a5cc9af8c33c7"></a>
+        </small>
+        </iframe>
+    </section>
+
+    <br><br>
+
+    <!-- Location End -->
+
+
+
+    <!-- Star Ratings -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Ratings</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rw-ui-container"></div>
+        <script type="text/javascript">(function(d, t, e, m){
+
+            // Async Rating-Widget initialization.
+            window.RW_Async_Init = function(){
+
+                RW.init({
+                    huid: "262957",
+                    uid: "963d76479cf2b776fd15177bbef99b5b",
+                    source: "website",
+                    options: {
+                        "size": "medium",
+                        "style": "oxygen",
+                        "isDummy": false
+                    }
+                });
+                RW.render();
+            };
+            // Append Rating-Widget JavaScript library.
+            var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+                    l = d.location, ck = "Y" + t.getFullYear() +
+                            "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+                    f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+                    a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+            if (d.getElementById(id)) return;
+            rw = d.createElement(e);
+            rw.id = id; rw.async = true; rw.type = "text/javascript";
+            rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+            s.parentNode.insertBefore(rw, s);
+        }(document, new Date(), "script", "rating-widget.com/"));</script>
+
+    </div>
+
+
+    <!-- Star ratings end -->
+
+
+    <!-- Disqus Reviews -->
+
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="type">Reviews</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'studentguruji';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+        <!-- Disqus Reviews end --> <br>
+
+
+
+        <!-- Ads responsive to resize -->
+
+        <div id="google-ads-1"></div>
+
+        <script type="text/javascript">
+
+            /* Calculate the width of available ad space */
+            ad = document.getElementById('google-ads-1');
+
+            if (ad.getBoundingClientRect().width) {
+                adWidth = ad.getBoundingClientRect().width; // for modern browsers
+            } else {
+                adWidth = ad.offsetWidth; // for old IE
+            }
+
+            /* Replace ca-pub-XXX with your AdSense Publisher ID */
+            google_ad_client = "ca-pub-5595742793051765";//ca-pub-8396300191371525
+
+            /* Replace 1234567890 with the AdSense Ad Slot ID */
+            google_ad_slot = "8337864734";//2970127291
+
+            /* Do not change anything after this line */
+            if ( adWidth >= 728 )
+                google_ad_size = ["1150", "90"];  /* Leaderboard 728x90 */
+            else if ( adWidth >= 468 )
+                google_ad_size = ["468", "60"];  /* Banner (468 x 60) */
+            else if ( adWidth >= 336 )
+                google_ad_size = ["336", "280"]; /* Large Rectangle (336 x 280) */
+            else if ( adWidth >= 300 )
+                google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
+            else if ( adWidth >= 250 )
+                google_ad_size = ["250", "250"]; /* Square (250 x 250) */
+            else if ( adWidth >= 200 )
+                google_ad_size = ["200", "200"]; /* Small Square (200 x 200) */
+            else if ( adWidth >= 180 )
+                google_ad_size = ["180", "150"]; /* Small Rectangle (180 x 150) */
+            else
+                google_ad_size = ["125", "125"]; /* Button (125 x 125) */
+
+            document.write (
+                    '<ins class="adsbygoogle" style="display:inline-block;width:'
+                    + google_ad_size[0] + 'px;height:'
+                    + google_ad_size[1] + 'px" data-ad-client="'
+                    + google_ad_client + '" data-ad-slot="'
+                    + google_ad_slot + '"></ins>'
+            );
+
+            (adsbygoogle = window.adsbygoogle || []).push({});
+
+        </script>
+
+        <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+
+        <!-- ads responsive end -->
+
+
+        <!-- ******FOOTER****** --><br><br><br>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                            <div class="footer-col-inner">
+                                <h3 class="title">About us</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Press</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                            <div class="footer-col-inner">
+                                <h3 class="title">Product</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>How it works</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>API</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Download Apps</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Pricing</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
+                            <div class="footer-col-inner">
+                                <h3 class="title">Support</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+
+                        <!-- More options added -->
+
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                            <div class="footer-col-inner">
+                                <h3 class="title">About us</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Press</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                            <div class="footer-col-inner">
+                                <h3 class="title">Product</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>How it works</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>API</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Download Apps</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Pricing</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
+                            <div class="footer-col-inner">
+                                <h3 class="title">Support</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+
+                        <!-- More options ended -->
+
+
+                        <!--                <div class="footer-col connect col-md-6 col-sm-12 col-xs-12">
+                                            <div class="footer-col-inner">
+                                                <ul class="social list-inline">
+                                                    <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                    <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                                <div class="form-container">
+                                                    <p class="intro">Stay up to date with the latest news and offers from Velocity</p>
+                                                    <form class="signup-form navbar-form">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Enter your email address">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-cta btn-cta-primary">Subscribe Now</button>
+                                                    </form>
+                                                </div><!--//subscription-form-->
+                        <!--                         </div><!--//footer-col-inner-->
+                        <!--                   </div><!--//foooter-col-->
+                        <!--                    <div class="clearfix"></div>
+                                        </div><!--//row-->
+                        <!--               <div class="row has-divider">
+                                           <div class="footer-col download col-md-6 col-sm-12 col-xs-12">
+                                               <div class="footer-col-inner">
+                                                   <h3 class="title">Mobile apps</h3>
+                                                   <ul class="list-unstyled download-list">
+                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-apple"></i><span class="text">Download for iOS</span> </a></li>
+                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-android"></i><span class="text">Download for Android</span></a></li>
+                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-windows"></i><span class="text">Windows coming soon...</span></a></li>
+                                                   </ul>
+                                               </div><!--//footer-col-inner-->
+                        <!--                    </div><!--//download-->
+                        <!--                    <div class="footer-col contact col-md-6 col-sm-12 col-xs-12">
+                                                <div class="footer-col-inner">
+                                                    <h3 class="title">Contact us</h3>
+                                                    <p class="adr clearfix">
+                                                        <i class="fa fa-map-marker pull-left"></i>
+                                                    <span class="adr-group pull-left">
+                                                        <span class="street-address">College Green</span><br>
+                                                        <span class="region">56 College Green Road</span><br>
+                                                        <span class="postal-code">BS1 XR18</span><br>
+                                                        <span class="country-name">UK</span>
+                                                    </span>
+                                                    </p>
+                                                    <p class="tel"><i class="fa fa-phone"></i>0800 123 4567</p>
+                                                    <p class="email"><i class="fa fa-envelope-o"></i><a href="#">enquires@website.com</a></p>
+                                                    <a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
+                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                </div><!--//footer-col-inner-->
+                        <!--                    </div><!--//contact-->
+                    </div>
+                </div><!--//container-->
+            </div><!--//footer-content-->
+
+            <!-- Scroll to top button -->
+
+            <a href="#0" class="cd-top"></a>
+
+            <!-- Scroll to top button ended -->
+
+            <div class="bottom-bar">
+                <div class="container">
+                    <small class="copyright">Copyright @ 2015 <a href="#" target="_blank">Ubiquos Inc</a></small>
+                    <script>var sharebutton_is_horizontal = true; document.write('<script src="//cdn.script.to/share2.js"></scr' + 'ipt>'); document.write("<div style='display: none'>");</script><a href="http://sharebutton.org/">social share buttons</a><script>document.write("</div>");</script>
+                </div><!--//container-->
+            </div><!--//bottom-bar-->
+        </footer><!--//footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootswatch.js"></script>
+</body>
+</html>

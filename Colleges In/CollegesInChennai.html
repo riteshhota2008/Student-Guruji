@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Student Guruji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../Css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/styles.css">
+
+
+    <!-- Material Design start -->
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+    <!-- Material Design End -->
+
+
+    <!-- Css Menu -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="../Js/cssmenu.js"></script>
+
+    <!-- Css Menu End -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+
+    <!-- flex slider -->
+
+    <link rel="stylesheet" href="../Css/flexslider.css" type="text/css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../Js/jquery.flexslider.js"></script>
+    <script src="flexSlider/jquery.flexslider-min.js"></script>
+
+    <!-- Scroll to top css -->
+
+    <!--<link rel="stylesheet" href="scrolltotop.css" type="text/css">-->
+    <script src="../Js/scrolltotop.js"></script>
+
+    <!-- Scroll to top css end -->
+
+    <!-- flex slider end -->
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+
+            //simple FlexSlider call
+            $('.flexslider').flexslider();
+
+            // more complex call
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlsContainer: ".flex-container",
+                start: function(slider) {
+                    $('.total-slides').text(slider.count);
+                },
+                after: function(slider) {
+                    $('.current-slide').text(slider.currentSlide);
+                }
+            });
+        });
+    </script>
+
+
+    <style>
+
+        .text-muted {
+            width:90%;
+            margin: auto;
+        }
+
+        #buttons {
+            margin-left: 0px;
+        }
+
+        .page-header {
+            width: 100%;
+            /*margin-left: 70px;*/
+        }
+
+        .move-right {
+            margin-left: 0;
+        }
+
+        .move-more-right {
+            margin-left: 70px;
+        }
+
+        /*#home {
+            background-image: url("img/srm-university-bg-image.jpg");
+            height: 750px;
+            width: 1350px;
+        }*/
+
+        .btn-default {
+            height: 31px;/*For nav search bar */
+        }
+
+    </style>
+
+    <style>
+
+        /* ======= Footer ======= */
+        .footer {
+            background: #253340;
+            color: #fff;
+            padding-top: 40px;
+            font-size: 14px;
+            position: relative;
+            z-index: 20;
+            width: 100%;/*added 120*/
+            /*margin-left: -10%;/*added -7*/
+            padding-left: 10px;/*added*/
+        }
+        .footer p {
+            -webkit-opacity: 0.5;
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+        }
+        .footer .btn-cta,
+        .footer a.btn-cta {
+            padding: 9px 10px;
+        }
+        .footer .footer-col.links .fa {
+            margin-right: 5px;
+        }
+        .footer .footer-col.links li {
+            margin-bottom: 10px;
+        }
+        .footer .footer-col.connect .social {
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        .footer .footer-col.connect .social li {
+            margin-right: 10px;
+        }
+        .footer .footer-col.connect .social li a .fa {
+            color: #b3b3b3;
+            font-size: 22px;
+        }
+        .footer .footer-col.connect .social li a:hover .fa {
+            color: #ec6952;
+        }
+        .footer .footer-col.connect .btn-cta-primary {
+            background: #5d80a1;
+            border-color: #5d80a1;
+        }
+        .footer .footer-col.connect .btn-cta-primary:hover {
+            background: #4a6781;
+            border-color: #4a6781;
+        }
+        .footer .footer-col .title {
+            color: #fff;
+            font-weight: normal;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            -webkit-opacity: 0.9;
+            -moz-opacity: 0.9;
+            opacity: 0.9;
+        }
+        .footer .footer-col p {
+            color: #fff;
+        }
+        .footer .footer-col a {
+            color: #6d8dab;
+        }
+        .footer .footer-col a:hover {
+            color: #8da6bd;
+        }
+        .footer .footer-col .navbar-form {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .footer .footer-col .navbar-form .form-control {
+            -webkit-opacity: 0.9;
+            -moz-opacity: 0.9;
+            opacity: 0.9;
+        }
+        .footer .footer-col .navbar-form .form-control:focus {
+            -webkit-opacity: 1;
+            -moz-opacity: 1;
+            opacity: 1;
+        }
+        .footer .has-divider {
+            border-top: 1px solid #2b3b4a;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .footer .download .download-list li {
+            margin-bottom: 15px;
+        }
+        .footer .download .download-list li .btn-ghost {
+            text-align: left;
+            -webkit-opacity: 0.6;
+            -moz-opacity: 0.6;
+            opacity: 0.6;
+            width: 230px;
+        }
+        .footer .download .download-list li .btn-ghost:hover {
+            -webkit-opacity: 1;
+            -moz-opacity: 1;
+            opacity: 1;
+        }
+        .footer .contact p {
+            -webkit-opacity: 0.5;
+            -moz-opacity: 0.5;
+            opacity: 0.5;
+        }
+        .footer .contact p a {
+            -webkit-opacity: 1;
+            -moz-opacity: 1;
+            opacity: 1;
+        }
+        .footer .contact .fa {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .footer .contact .email .fa {
+            font-size: 16px;
+        }
+        .footer .bottom-bar {
+            background: #1e1e1e;
+            color: #b3b3b3;
+            font-size: 14px;
+            padding: 10px 0;
+            margin-left: -10px;/*added*/
+        }
+        .footer .bottom-bar .copyright {
+            line-height: 1.6;
+        }
+    </style>
+
+    <style>
+
+        .cd-container {
+            width: 90%;
+            max-width: 768px;
+            margin: 2em auto;
+        }
+        .cd-container::after {
+            /* clearfix */
+            content: '';
+            display: table;
+            clear: both;
+        }
+        /* @media only screen and (min-width: 1024px) {*/
+
+        .cd-top {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            position: fixed;
+            bottom: 40px;
+            right:10px; /*right:10px;new--left: 1210px;*/
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            /* image replacement properties */
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+            background: #5d8081 url(../Images/cd-top-arrow.svg) no-repeat center 50%; /*#5d8081 rgba(232, 98, 86, 0.8)*/
+            visibility: hidden;
+            opacity: 0;
+            border-radius: 50px;
+            -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+            -moz-transition: opacity .3s 0s, visibility 0s .3s;
+            transition: opacity .3s 0s, visibility 0s .3s;
+        }
+
+        .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+            -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+            -moz-transition: opacity .3s 0s, visibility 0s 0s;
+            transition: opacity .3s 0s, visibility 0s 0s;
+        }
+
+        .cd-top.cd-is-visible {
+            /* the button becomes visible */
+            visibility: visible;
+            opacity: 1; /*1*/
+        }
+
+        .cd-top.cd-fade-out {
+            /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+            opacity: 1; /*.5*/
+        }
+
+        .no-touch .cd-top:hover {
+            background-color: #5d8081; /*#e86256*/
+            opacity: 1; /*1*/
+        }
+
+        @media only screen and (min-width: 768px) {
+            .cd-top {
+                right: 20px;
+                bottom: 20px;
+            }
+
+        }
+        /* }/*added*/
+        @media only screen and (min-width: 1024px) {
+            .cd-top {
+                height: 60px;
+                width: 60px;
+                right: 30px;
+                bottom: 40px;
+            }
+
+        }
+
+
+
+
+        /*}
+    </style>
+
+    <!-- Search option -->
+
+    <style>
+
+        #search {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+
+            -webkit-transform: translate(0px, -100%) scale(0, 0);
+            -moz-transform: translate(0px, -100%) scale(0, 0);
+            -o-transform: translate(0px, -100%) scale(0, 0);
+            -ms-transform: translate(0px, -100%) scale(0, 0);
+            transform: translate(0px, -100%) scale(0, 0);
+
+            opacity: 0;
+        }
+
+        #search.open {
+            -webkit-transform: translate(0px, 0px) scale(1, 1);
+            -moz-transform: translate(0px, 0px) scale(1, 1);
+            -o-transform: translate(0px, 0px) scale(1, 1);
+            -ms-transform: translate(0px, 0px) scale(1, 1);
+            transform: translate(0px, 0px) scale(1, 1);
+            opacity: 1;
+        }
+
+        #search input[type="search"] {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            background: rgba(0, 0, 0, 0);
+            font-size: 60px;
+            font-weight: 300;
+            text-align: center;
+            border: 0px;
+            margin: 0px auto;
+            margin-top: -51px;
+            padding-left: 30px;
+            padding-right: 30px;
+            outline: none;
+        }
+        #search .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: 61px;
+            margin-left: -45px;
+        }
+        #search .close {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            color: #fff;
+            background-color: #428bca;
+            border-color: #357ebd;
+            opacity: 1;
+            padding: 10px 17px;
+            font-size: 27px;
+        }
+    </style>
+
+
+    <!-- Search option end -->
+
+    <!-- Search Js -->
+
+    <script>
+
+        $(function () {
+            $('a[href="#search"]').on('click', function(event) {
+                event.preventDefault();
+                $('#search').addClass('open');
+                $('#search > form > input[type="search"]').focus();
+            });
+
+            $('#search, #search button.close').on('click keyup', function(event) {
+                if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+                    $(this).removeClass('open');
+                }
+            });
+
+
+        });
+
+    </script>
+
+    <!-- Search Js end -->
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <![endif]-->
+    <script>
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23019901-1']);
+        _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+
+    <script>
+        $("#cssmenu").menumaker({
+            title: "Menu",
+            format: "multitoggle"
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+
+ <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <div id='cssmenu'>
+                <ul>
+                    <li><a href='index.html'>Student Guruji</a></li>
+                    <li class='active'><a href='#'>Courses <!--<span class="caret"></span>--></a>
+                        <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Courses <span class="caret"></span></a>-->
+                        <ul>
+                            <li><a href="../cerulean/">Engineering</a></li>
+                            <li><a href="../cosmo/">Medical</a></li>
+                            <li><a href="../cyborg/">MBA</a></li>
+                            <li><a href="../darkly/">Hotel Management</a></li>
+                            <li><a href="../flatly/">Banking & Finance</a></li>
+                            <li><a href="../journal/">Science</a></li>
+                            <li><a href="../lumen/">Arts</a></li>
+                            <li><a href="../paper/">Commerce</a></li>
+                            <li><a href="../readable/">Fasion Designing</a></li>
+                            <li><a href="../sandstone/">Film Institute</a></li>
+                        </ul>
+
+
+                    <li><a href='#'>Colleges <!--<span class="caret"></span>--></a>
+                        <ul>
+                            <li><a href='#'>Colleges in Chennai</a>
+                                <ul>
+                                    <li><a href='IITchennai.html'>IIT Madras</a></li>
+                                    <li><a href='#'>IIM Trichy</a></li>
+                                    <li><a href='#'>IHM Chennai</a></li>
+                                    <li><a href='#'>NIT Trichy</a></li>
+                                    <li><a href='Srmuniversity.html'>SRM University</a></li>
+                                    <li><a href='Vituniversity.html'>VIT University</a></li>
+                                    <li><a href='#'>More</a></li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li><a href='#'>Colleges in Mumbai</a>
+                                <ul>
+                                    <li><a href="Engineering/Mumbai/IITBombay.html">IIT Bombay</a></li>
+                                    <li><a href='#'>IHM Mumbai</a></li>
+                                    <li><a href='Engineering/Mumbai/MukeshPatelSchoolofTechnologyManagement&EngineeringMumbai.html'>NMIMS University</a></li>
+                                    <li><a href='#'>Amity University</a></li>
+                                    <li><a href='#'>D.Y. Patil University</a></li>
+                                    <li><a href='Engineering/Mumbai/DonBoscoInstituteofTechnologyMumbai.html'>Don Bosco Institute</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Kolkata</a>
+                                <ul>
+                                    <li><a href='#'>IIT Kharagpur</a></li>
+                                    <li><a href='#'>NIT Durgapur</a></li>
+                                    <li><a href='#'>IIM Calcutta</a></li>
+                                    <li><a href='#'>Jadavpur University</a></li>
+                                    <li><a href='#'>Goenka College</a></li>
+                                    <li><a href='#'>Adamas University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Delhi</a>
+                                <ul>
+                                    <li><a href='#'>IIT Delhi</a></li>
+                                    <li><a href='#'>IHM</a>
+                                    <li><a href='#'>AIIMS</a></li>
+                                    <li><a href='#'>NIT Delhi</a></li>
+                                    <li><a href='#'>NIIT University</a></li>
+                                    <li><a href='#'>Apeejay University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Bangalore</a>
+                                <ul>
+                                    <li><a href='#'>IIM Bangalore</a></li>
+                                    <li><a href='#'>Manipal University</a></li>
+                                    <li><a href='#'>Presidency University</a></li>
+                                    <li><a href='#'>Reva University</a></li>
+                                    <li><a href='#'>PES University</a></li>
+                                    <li><a href='#'>Christ University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Pune</a>
+                                <ul>
+                                    <li><a href='#'>Shastri Institute</a></li>
+                                    <li><a href='#'>IIAEIT</a></li>
+                                    <li><a href='#'>Symbiosis Institute</a></li>
+                                    <li><a href='#'>Maharashtra Institute</a></li>
+                                    <li><a href='#'>MIT Academy</a></li>
+                                    <li><a href='#'>Vishwakarma Institute</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in <!--<br></br>-->Ahmedab</a> <!-- spelling-->
+                                <ul>
+                                    <li><a href='#'>IIM Ahmedabad</a></li>
+                                    <li><a href='#'>IIT Gandhinagar</a></li>
+                                    <li><a href='#'> Nirma University</a></li>
+                                    <li><a href='#'>Indus University</a></li>
+                                    <li><a href='#'>Adani Institute</a></li>
+                                    <li><a href='#'>Navrangpura Institute</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Andhra</a>
+                                <ul>
+                                    <li><a href='#'>IIM Visakhapatnam</a></li>
+                                    <li><a href='#'>IIT Tirupati</a></li>
+                                    <li><a href='#'>IHM Hyderabad</a></li>
+                                    <li><a href='#'>NIT Warangal</a></li>
+                                    <li><a href='#'>IIIT Hyderabad</a></li>
+                                    <li><a href='#'>Gitam University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in Bhubanes</a>
+                                <ul>
+                                    <li><a href='#'>IIT Bhubaneswar</a></li>
+                                    <li><a href='#'>NIT Rourkela</a></li>
+                                    <li><a href='#'>AIIMS</a></li>
+                                    <li><a href='#'>IIIT Bhubaneswar</a></li>
+                                    <li><a href='#'>KIIT University</a></li>
+                                    <li><a href='#'>VSS University Burla</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Colleges in U.P</a>
+                                <ul>
+                                    <li><a href='#'>IIT Kanpur</a></li>
+                                    <li><a href='#'>IHM Lucknow</a></li>
+                                    <li><a href='#'>NIT Allahabad</a></li>
+                                    <li><a href='#'>IIIT Allahabad</a></li>
+                                    <li><a href='#'>Amity University,</a></li>
+                                    <li><a href='#'>Integral University</a></li>
+                                    <li><a href='#'>More</a></li>
+                                </ul>
+                            </li>
+
+
+
+
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#search">Search &nbsp; <i class="fa fa-search"></i></a></li>
+
+                    <!-- <li><a href='#'>Reviews</a></li> -->
+                    <!--<li><a href='#'>Register</a></li>
+                    <li><a href='#'>Log In</a></li>-->
+
+
+
+                    <!--<li><a href="reviews.php">Reviews</a></li> <!-- new added -->
+                    <!--  <li><a href="register.php" class="nav navbar-nav navbar-right">Login</a></li> -->
+                    <!-- <li class="divider-vertical"></li>
+                     <li class="dropdown">
+                         <a class="dropdown-toggle" href="#" data-toggle="dropdown" class="nav navbar-nav navbar-right" target="_blank">Log In <strong class="caret"></strong></a>
+                         <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                             <form action="index.php" method="post">
+                                 Username:<br />
+                                 <input type="text" name="username" value="<?php echo $submitted_username; ?>" />
+                                 <br /><br />
+                                 Password:<br />
+                                 <input type="password" name="password" value="" />
+                                 <br /><br />
+                                 <input type="submit" class="btn btn-info" value="Login" />
+                             </form>
+                         </div>
+                     </li> -->
+
+                    <!-- Search Bar -->
+
+
+                    <div id="search">
+                        <button type="button" class="close">×</button>
+                        <form>
+                            <input type="search" value="" placeholder="Search for Colleges..." />
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+
+
+                    <!------------->
+                    <!--  <div class="col-sm-3 col-md-5">
+                          <form class="navbar-form" role="search">
+                              <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Search" name="q">
+                                  <div class="input-group-btn">
+                                      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+
+          <!-- Search Bar end -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--<div class="container"><br><br><br>
+    <div class="col s12 m6">
+        <div class="card blue-grey darken-3">
+            <div class="card-content white-text">
+                <span class="card-title"><span class><div class="text-center">Colleges in Chennai</div></span>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<div class="container"><br><br><br>
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                 <img src="../Images/srm-2.jpg">
+                <a href="Srmuniversity.html"><span class="card-title">Anna University</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="http://www.annauniv.edu">www.annauniv.edu</a> | Estd: 1978 <br>State University
+                    | Contact : <a href="tel:+914422357080">04422357080</a>, <a href="tel:+914422357081">044-22357081</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">Hindustan University</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="https://hindustanuniv.ac.in/">https://hindustanuniv.ac.in/</a> | Estd: 1985 |<br> State University | Contact : <a href="tel:+914427474262">04427474262</a>, <a href="tel:+914427474395">04427474395</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">IIT Madras</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="http://www.iitm.ac.in/">www.iitm.ac.in</a> | Estd: 1959 <br>Autonomous Institute
+                    | Contact : <a href="tel:+914422578037">04422578037</a>, <a href="tel:+914422578038">04422578038</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">Madras Institute of Technology</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="http://www.mitindia.edu">www.mitindia.edu</a> | Estd: 1949 <br>Autonomous College
+                    | Contact : <a href="tel:+914422516002">04422516002</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">Sri Sai Ram Engineering College</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="http://www.sairam.edu.in">www.sairam.edu.in</a> | Estd: 1995 <br>Affiliated College
+                    | Contact : <a href="tel:+914422512222">04422512222</a>, <a href="tel:+914422512223">04422512223</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">Sathyabama University</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="http://www.sathyabamauniversity.ac.in">www.sathyabamauniversity.ac.in</a> | Estd: 1978 <br>State University | Contact : <a href="tel:+914424503150">04424503150</a>, <a href="tel:+914424503150">04424503151</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">SRM University, Vadapalani</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="http://www.srmuniv.ac.in/ramapuram-part-vadapalani/">www.srmuniv.ac.in/ramapuram-part-vadapalani/</a> | Estd: 2009 <br>Deemed University | Contact : <a href="tel:+9104443969966">04443969966</a>, <a href="tel:+9104443969967">04443969967</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">SRM University, Ramapuram</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="http://www.srmuniv.ac.in/ramapuram/">www.srmuniv.ac.in/ramapuram</a> | Estd: 1985 | Deemed University
+                    | Contact : <a href="tel:04430603042">04430603042</a>, <a href="tel:044 3060 3111">04430603111</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">SSN College of Engineering</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Chennai, Tamil Nadu | <a href="http://www.ssn.edu.in">www.ssn.edu.in</a> | Estd: 1996  <br> Affiliated College
+                    | Contact : <a href="tel:+914427469700">04427469700</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="../Images/IIT-Bombay-1.jpg">
+                <a href="IITchennai.html"><span class="card-title">Velammal Institute of Technology</span></a>
+            </div>
+            <div class="card-content">
+                <p class="lead">Panchetti, Tamil Nadu | <a href="http://velammalitech.edu.in/">http://velammalitech.edu.in/</a> | Estd: 2008 <br>State University | Contact : <a href="tel:+914427994065">044 27994065</a>, <a href="tel:+914427994066">04427994066</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+ <div class="container">
+     <div class="col s12 m7">
+         <div class="card">
+             <div class="card-image">
+                 <img src="../Images/IIT-Bombay-1.jpg">
+                 <a href="IITchennai.html"><span class="card-title">VIT University</span></a>
+             </div>
+             <div class="card-content">
+                 <p class="lead">Vellore, Tamil Nadu | <a href="http://www.vit.ac.in/">www.vit.ac.in/</a> | Estd: 1984 |<br> Deemed University
+                     | Contact : <a href="tel:+914162243091">04162243091</a>, <a href="tel:+914162243093">+914162243093</a></p>
+             </div>
+
+         </div>
+     </div>
+ </div>
+
+ <div class="container">
+     <div class="col s12 m7">
+         <div class="card">
+             <div class="card-image">
+                 <img src="../Images/IIT-Bombay-1.jpg">
+                 <a href="IITchennai.html"><span class="card-title">SRM University, Kattankulathur</span></a>
+             </div>
+             <div class="card-content">
+                 <p class="lead">Chennai, Tamil Nadu | <a href="http://www.srmuniv.ac.in/">www.srmuniv.ac.in</a> | Estd: 1985 <br>Deemed University
+                     | Contact : <a href="tel:04427417400">04427417400</a>, <a href="tel:04427455510">04427455510</a></p>
+             </div>
+
+         </div>
+     </div>
+ </div>
+
+
+        <!-- Ads responsive to resize -->
+
+        <div id="google-ads-1"></div>
+
+        <script type="text/javascript">
+
+            /* Calculate the width of available ad space */
+            ad = document.getElementById('google-ads-1');
+
+            if (ad.getBoundingClientRect().width) {
+                adWidth = ad.getBoundingClientRect().width; // for modern browsers
+            } else {
+                adWidth = ad.offsetWidth; // for old IE
+            }
+
+            /* Replace ca-pub-XXX with your AdSense Publisher ID */
+            google_ad_client = "ca-pub-8396300191371525";
+
+            /* Replace 1234567890 with the AdSense Ad Slot ID */
+            google_ad_slot = "2970127291";
+
+            /* Do not change anything after this line */
+            if ( adWidth >= 728 )
+                google_ad_size = ["1150", "90"];  /* Leaderboard 728x90 */
+            else if ( adWidth >= 468 )
+                google_ad_size = ["468", "60"];  /* Banner (468 x 60) */
+            else if ( adWidth >= 336 )
+                google_ad_size = ["336", "280"]; /* Large Rectangle (336 x 280) */
+            else if ( adWidth >= 300 )
+                google_ad_size = ["300", "250"]; /* Medium Rectangle (300 x 250) */
+            else if ( adWidth >= 250 )
+                google_ad_size = ["250", "250"]; /* Square (250 x 250) */
+            else if ( adWidth >= 200 )
+                google_ad_size = ["200", "200"]; /* Small Square (200 x 200) */
+            else if ( adWidth >= 180 )
+                google_ad_size = ["180", "150"]; /* Small Rectangle (180 x 150) */
+            else
+                google_ad_size = ["125", "125"]; /* Button (125 x 125) */
+
+            document.write (
+                    '<ins class="adsbygoogle" style="display:inline-block;width:'
+                    + google_ad_size[0] + 'px;height:'
+                    + google_ad_size[1] + 'px" data-ad-client="'
+                    + google_ad_client + '" data-ad-slot="'
+                    + google_ad_slot + '"></ins>'
+            );
+
+            (adsbygoogle = window.adsbygoogle || []).push({});
+
+        </script>
+
+        <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        </script>
+
+        <!-- ads responsive end -->
+
+
+        <!-- ******FOOTER****** --><br><br><br>
+
+        <footer class="footer">
+            <div class="footer-content">
+               <div class="container">
+                    <div class="row">
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                            <div class="footer-col-inner">
+                                <h3 class="title">About us</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Press</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                            <div class="footer-col-inner">
+                                <h3 class="title">Product</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>How it works</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>API</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Download Apps</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Pricing</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
+                            <div class="footer-col-inner">
+                                <h3 class="title">Support</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+
+                        <!-- More options added -->
+
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                            <div class="footer-col-inner">
+                                <h3 class="title">About us</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Press</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                            <div class="footer-col-inner">
+                                <h3 class="title">Product</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>How it works</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>API</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Download Apps</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Pricing</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
+                            <div class="footer-col-inner">
+                                <h3 class="title">Support</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>
+                                </ul>
+                            </div><!--//footer-col-inner-->
+                        </div><!--//foooter-col-->
+
+                        <!-- More options ended -->
+
+
+                        <!--                <div class="footer-col connect col-md-6 col-sm-12 col-xs-12">
+                                            <div class="footer-col-inner">
+                                                <ul class="social list-inline">
+                                                    <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                    <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li>
+                                                </ul>
+                                                <div class="form-container">
+                                                    <p class="intro">Stay up to date with the latest news and offers from Velocity</p>
+                                                    <form class="signup-form navbar-form">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Enter your email address">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-cta btn-cta-primary">Subscribe Now</button>
+                                                    </form>
+                                                </div><!--//subscription-form-->
+                        <!--                         </div><!--//footer-col-inner-->
+                        <!--                   </div><!--//foooter-col-->
+                        <!--                    <div class="clearfix"></div>
+                                        </div><!--//row-->
+                        <!--               <div class="row has-divider">
+                                           <div class="footer-col download col-md-6 col-sm-12 col-xs-12">
+                                               <div class="footer-col-inner">
+                                                   <h3 class="title">Mobile apps</h3>
+                                                   <ul class="list-unstyled download-list">
+                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-apple"></i><span class="text">Download for iOS</span> </a></li>
+                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-android"></i><span class="text">Download for Android</span></a></li>
+                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-windows"></i><span class="text">Windows coming soon...</span></a></li>
+                                                   </ul>
+                                               </div><!--//footer-col-inner-->
+                        <!--                    </div><!--//download-->
+                        <!--                    <div class="footer-col contact col-md-6 col-sm-12 col-xs-12">
+                                                <div class="footer-col-inner">
+                                                    <h3 class="title">Contact us</h3>
+                                                    <p class="adr clearfix">
+                                                        <i class="fa fa-map-marker pull-left"></i>
+                                                    <span class="adr-group pull-left">
+                                                        <span class="street-address">College Green</span><br>
+                                                        <span class="region">56 College Green Road</span><br>
+                                                        <span class="postal-code">BS1 XR18</span><br>
+                                                        <span class="country-name">UK</span>
+                                                    </span>
+                                                    </p>
+                                                    <p class="tel"><i class="fa fa-phone"></i>0800 123 4567</p>
+                                                    <p class="email"><i class="fa fa-envelope-o"></i><a href="#">enquires@website.com</a></p>
+                                                    <a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
+                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                </div><!--//footer-col-inner-->
+                        <!--                    </div><!--//contact-->
+                    </div>
+                </div><!--//container-->
+            </div><!--//footer-content-->
+
+            <!-- Scroll to top button -->
+
+            <a href="#0" class="cd-top"></a>
+
+            <!-- Scroll to top button ended -->
+
+            <div class="bottom-bar">
+                <div class="container">
+                    <small class="copyright">Copyright @ 2015 <a href="#" target="_blank">Ubiquos Inc</a></small>
+                    <script>var sharebutton_is_horizontal = true; document.write('<script src="//cdn.script.to/share2.js"></scr' + 'ipt>'); document.write("<div style='display: none'>");</script><a href="http://sharebutton.org/">social share buttons</a><script>document.write("</div>");</script>
+                </div><!--//container-->
+            </div><!--//bottom-bar-->
+        </footer><!--//footer-->
+
+
+
+        <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../assets/js/bootswatch.js"></script>
+</body>
+</html>
