@@ -1,0 +1,44 @@
+main {
+    position: absolute;
+    transition: all 0.15s ease-in-out;
+    top: 0;
+}
+main header {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=80ec55a9143ff12b524d6f35f72ac4ca");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+main section {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: #fff;
+    padding: 25px;
+    font-family: helvetica;
+    font-weight: lighter;
+    padding: 50px;
+    margin: 150px 75px;
+    transition: all 0.15s ease-in-out;
+    height: auto;
+}
+main section:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+main section h1 {
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: lighter;
+}
+
+@media only screen and  (max-width :768px){
+    main section {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+}

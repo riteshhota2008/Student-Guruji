@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="Css/contact.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="perspective">
+    <div id="container">
+        <div class="face front">
+            <div id="white"><h1>Contact Us!<br><span>--------</span></h1></div>
+        </div>
+        <div class="face back">
+            <div id="open"></div>
+            <div id="folds"></div>
+            <div class="button con">contact form</div>
+            <div id="letter">
+                <hgroup>
+                    <h1 id="info" style="font-size: 25px">support@studentguruji.in</h1>
+                   <!-- <h2>---- or ----</h2> -->
+                </hgroup>
+                <p>
+
+                <form action="" method="post" novalidate="novalidate" id="myform">
+
+           <span class="Name">
+             <input type="text" name="Name" value="" size="40" class="nameinput" aria-required="true" aria-invalid="false" placeholder="Name" required>
+          </span>
+
+          <span class="Email">
+            <input type="email" name="Email"  size="40" class="emailinput" aria-required="true" aria-invalid="false" placeholder="Email" required>
+          </span>
+
+          <span class="Subject">
+            <input type="text" name="Subject" value="" size="40" class="nameinput" aria-required="true" aria-invalid="false" placeholder="Subject" required>
+          </span>
+
+          <span class="Message">
+            <textarea name="Message" cols="40" rows="10" aria-invalid="false" placeholder="Message" required></textarea>
+          </span>
+
+                    <input type="submit" value="Send" class="button send">
+
+                </form></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper"></div>
+
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+
+<script>
+
+    var C = $('#container'), A = $('#open'), L = $('#letter'), B = $('.button.con'), H = $('#letter hgroup h2'), F = $('.front'), W = $('#wrapper'), P = $('#perspective'), closed = true;
+    $(function () {
+        $('textarea').text('');
+    });
+    F.click(function () {
+        C.css({
+            'transition': 'all 1s',
+            'transform': 'rotateY(180deg)'
+        });
+        A.css({
+            'transition': 'all 1s .5s',
+            'transform': 'rotateX(180deg)',
+            'z-index': '0'
+        });
+        W.css({ 'visibility': 'visible' });
+    });
+    W.click(function () {
+        var message = $.trim($('textarea').val());
+        if (message.length > 0) {
+            var r = confirm('You have not sent your message, would you still like to close the form?');
+            if (r == false) {
+                return;
+            } else {
+                document.getElementById('myform').reset();
+            }
+        }
+        if (closed === false) {
+            L.css({
+                'transition': 'all .7s',
+                'top': '3px',
+                'height': '200px'
+            });
+            P.css({ 'transform': 'translateY(0px)' });
+            F.css({ 'transform': 'rotateZ(0deg)' });
+            H.css({
+                'transition': 'all .5s',
+                'transform': 'rotateZ(0deg)'
+            });
+            C.css({ 'transition': 'all 1.2s .95s' });
+            A.css({ 'transition': 'all 1.2s .7s' });
+            H.css({ 'transition': 'all .5s' });
+            document.getElementById('info').innerHTML = 'P:123.456.7890';
+            closed = true;
+        } else {
+            C.css({ 'transition': 'all 1s .5s' });
+            A.css({ 'transition': 'all .5s' });
+            closed = false;
+        }
+        C.css({ 'transform': 'rotateY(0deg) rotate(3deg)' });
+        A.css({
+            'transform': 'rotateX(0deg)',
+            'z-index': '10'
+        });
+        W.css({ 'visibility': 'hidden' });
+    });
+    B.click(function () {
+        L.css({
+            'transition': 'all .5s 1s',
+            'top': '-600px',
+            'height': '550px'
+        });
+        P.css({
+            'transition': 'all 1s',
+            'transform': 'translateY(450px)'
+        });
+        H.css({
+            'transition': 'all 1s',
+            'transform': 'rotateZ(180deg)'
+        });
+        document.getElementById('info').innerHTML = 'Contact Us!';
+    });
+
+</script>
+
+</body>
+</html>
