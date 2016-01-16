@@ -8,7 +8,9 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
-    v1.0.6 - Udated google maps for all colleges.
+    v1.0.7 - Updated all exams.
+
+    v1.0.6 - Updated google maps for all colleges.
 
     v1.0.5 - Added events, learn, reviews.
 
