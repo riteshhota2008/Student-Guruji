@@ -8,8 +8,8 @@ figure.snip1208 {
     overflow: hidden;
     margin: 10px 1%;/*1*/
     min-width: 220px;
-    max-width: 355px;
-    width: 100%;
+    max-width: 355px;/*max-width: 355px;*/
+    width: 88%;
     background-color: #ffffff;
     color: #000000;
     text-align: left;
@@ -67,12 +67,12 @@ figure.snip1208 i {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
-figure.snip1208 h3,
+figure.snip1208 h4,
 figure.snip1208 p {
     margin: 0;
     padding: 0;
 }
-figure.snip1208 h3 {
+figure.snip1208 h4 {
     margin-bottom: 10px;
     display: inline-block;
     font-weight: 600;
