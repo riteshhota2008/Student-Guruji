@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="../../Css/styles.css">
     <link rel="stylesheet" href="../../Css/style2.css">
 
+    <style type="text/css">
+        /* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
+        @media screen and (max-width: 980px) {
+            .a2a_floating_style.a2a_vertical_style { display: none; }
+        }
+    </style>
+
     <!-- Accordion -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -17,9 +24,9 @@
 
     <style>
         @media only screen and (min-width: 768px)	{
-        .panel-group {
-            max-width: 50%;
-        }
+            /*.panel-group {
+                width: 60%;
+            }*/
     }
     </style>
 
@@ -135,16 +142,10 @@
                     <li><a href='#'>Student Guruji</a></li>
                     <li class='active'><a href='#'>Courses </a>
                         <ul>
-                            <li><a href="../cerulean/">Engineering</a></li>
-                            <li><a href="../cosmo/">Medical</a></li>
-                            <li><a href="../cyborg/">MBA</a></li>
-                            <li><a href="../darkly/">Hotel Management</a></li>
-                            <li><a href="../flatly/">Banking & Finance</a></li>
-                            <li><a href="../journal/">Science</a></li>
-                            <li><a href="../lumen/">Arts</a></li>
-                            <li><a href="../paper/">Commerce</a></li>
-                            <li><a href="../readable/">Fasion Designing</a></li>
-                            <li><a href="../sandstone/">Film Institute</a></li>
+                            <li><a href="../../Courses/Engineering.html">Engineering</a></li>
+                            <li><a href="../../Courses/Medical.html">Medical</a></li>
+                            <li><a href="../../Courses/Management.html">Management</a></li>
+                            <li><a href="../../Courses/HotelManagement.html">Hotel Management</a></li>
                         </ul>
                     <li><a href='#'>Colleges </a>
                         <ul>
@@ -260,12 +261,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href='#'>Reviews</a></li>
-                    <li><a href="#" class="nav navbar-nav navbar-right">News</a></li>
-                    <li><a href="#" class="nav navbar-nav navbar-right">Articles</a></li>
-                    <li><a href="#" class="nav navbar-nav navbar-right">Search</a></li>
-                    <li><a href="#" class="nav navbar-nav navbar-right">About Us</a></li>
-                    <li><a href="#" class="nav navbar-nav navbar-right">Contact Us</a></li>
+                    <li><a href='../../Exams.html'>Exams</a></li>
+                    <li><a href="#" class="nav navbar-nav navbar-right">Search &nbsp;<i class="fa fa-search"></i></a></li>
+                    <li><a href='../../Reviews.html'>Reviews</a></li>
+                    <li><a href="../../News.html" class="nav navbar-nav navbar-right">News</a></li>
+                    <li><a href="../../Articles.html" class="nav navbar-nav navbar-right">Articles</a></li>
+                    <li><a href="../../Events.html" class="nav navbar-nav navbar-right">Events</a></li>
+                    <li><a href="../../Learn.html" class="nav navbar-nav navbar-right">Learn</a></li>
 
                 </ul>
             </div>
@@ -276,7 +278,7 @@
 <div class="container"><br><br><br>
     <div class="row">
         <div class="col-lg-10 col-md-7 col-sm-6">
-            <div class="col-lg-2 col-md-6 col-sm-6"><img src="../../Logo/Engineering/Ahmedabad/CEPT_University_Logo.jpeg" width="140" height="140" style="margin-left: -10px;border: 1px solid"/></div>
+            <div class="col-lg-2 col-md-6 col-sm-6"><img src="../../Logo/Engineering/Ahmedabad/CEPT_University_Logo.jpeg" width="140" height="140" style="margin: 10px 0 0 -10px;border: 1px solid"/></div>
             <h1>CEPT University, Ahmedabad</h1>
             <p class="lead">Ahmedabad, Gujarat | <a href="http://www.cept.ac.in">www.cept.ac.in</a> | Estd: 1962 <br>Deemed University
                 | Contact : <a href="tel:+917926302470">079 26302470</a>, <a href="tel:+917926302740">079 26302740</a></p>
@@ -324,48 +326,69 @@
 <!-- Courses Offered -->
 
 <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="page-header">
-                    <h1>Courses Offered</h1>
-                </div>
-            </div>
-        </div>
-    <div class="panel-group" style="width: 95%;margin: 0 0 0 10px">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse1">B.Tech</a>
-                </h4>
-            </div>
-            <div id="collapse1" class="panel-collapse collapse">
-                <ul class="list-group">
-                    <li class="list-group-item">Computer Science</li>
-                    <li class="list-group-item">Mechanical</li>
-                    <li class="list-group-item">Elecronics</li>
-                </ul>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1>Courses Offered</h1>
             </div>
         </div>
     </div>
-    <div class="panel-group" style="margin:0 0 0 10px;width: 95%">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse2">M.Tech</a>
-                </h4>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel-group" style="margin: 10px 0 0 10px;width: 95%">
+                <div class="panel panel-default" >
+                    <a data-toggle="collapse" href="#collapse1">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">B.Tech</h4>
+                    </div>
+                    </a>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">Computer Science</li>
+                            <li class="list-group-item">Mechanical</li>
+                            <li class="list-group-item">Elecronics</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="collapse2" class="panel-collapse collapse">
-                <ul class="list-group">
-                    <li class="list-group-item">Computer Science</li>
-                    <li class="list-group-item">Mechanical</li>
-                    <li class="list-group-item">Elecronics</li>
-                </ul>
+        </div>
+        <div class="col-md-6">
+            <div class="panel-group" >
+                <div class="panel panel-default" style="margin: 10px 0 0 10px;width: 95%">
+                    <a data-toggle="collapse" href="#collapse2">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">M.Tech</h4>
+                    </div>
+                    </a>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <ul class="list-group">
+                            <li class="list-group-item">Computer Science</li>
+                            <li class="list-group-item">Mechanical</li>
+                            <li class="list-group-item">Elecronics</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="empty" style="margin:10px 0 0 10px">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Student Guruji - Courses -->
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:97%;height:80px"
+                data-ad-client="ca-pub-1082095417371051"
+                data-ad-slot="4226107525"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
     </div>
 </div>
 
 
+
+
+<!--
 
     <div class="container">
         <div class="row">
@@ -689,7 +712,7 @@
     </main>
 
 
-<!-- Disqus Reviews end --> <br>
+<!-- Disqus Reviews end --><!-- <br><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
         <!-- Ads responsive to resize -->
 
@@ -707,10 +730,10 @@
             }
 
             /* Replace ca-pub-XXX with your AdSense Publisher ID */
-            google_ad_client = "ca-pub-5595742793051765";//ca-pub-8396300191371525
+            google_ad_client = "ca-pub-1082095417371051";//ca-pub-8396300191371525
 
             /* Replace 1234567890 with the AdSense Ad Slot ID */
-            google_ad_slot = "8337864734";//2970127291
+            google_ad_slot = "4226107525";//2970127291
 
             /* Do not change anything after this line */
             if ( adWidth >= 728 )
@@ -745,8 +768,20 @@
         <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
         </script>
 
+
+
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Student Guruji Footer -->
+<!--<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-1082095417371051"
+     data-ad-slot="4226107525"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 <!-- ads responsive end -->
-<!--</div>
+</div>
 
         <!-- ******FOOTER****** --><br><br><br>
 
@@ -758,10 +793,10 @@
                             <div class="footer-col-inner">
                                 <h3 class="title">About us</h3>
                                 <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Who we are</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
+                                    <li><a href="../../AboutUs.html"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                                    <li><a href="../../Blog.html"><i class="fa fa-caret-right"></i>Blog</a></li>
                                     <li><a href="#"><i class="fa fa-caret-right"></i>Sitemap</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                                    <li><a href="../../ContactUs.html"><i class="fa fa-caret-right"></i>Contact us</a></li>
                                     <!-- <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li> -->
                                 </ul>
                             </div><!--//footer-col-inner-->
@@ -813,10 +848,22 @@
             <div class="bottom-bar">
                 <div class="container">
                     <small class="copyright">Copyright @ 2015 <a href="#" target="_blank">Ubiquos Inc</a></small>
-                    <script>var sharebutton_is_horizontal = true; document.write('<script src="//cdn.script.to/share2.js"></scr' + 'ipt>'); document.write("<div style='display: none'>");</script><a href="http://sharebutton.org/">social share buttons</a><script>document.write("</div>");</script>
+             <!--       <script>var sharebutton_is_horizontal = false; document.write('<script src="//cdn.script.to/share2.js"></scr' + 'ipt>'); document.write("<div style='display: none'>");</script><a href="http://sharebutton.org/">social share buttons</a><script>document.write("</div>");</script> -->
                 </div><!--//container-->
             </div><!--//bottom-bar-->
         </footer><!--//footer-->
+
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:280px;">
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+</div>
+
+<script async src="//static.addtoany.com/menu/page.js"></script>
+
+<script type="text/javascript">CRISP_WEBSITE_ID = "-K734X41PBTRPYY7CuG1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
 </body>
 </html>

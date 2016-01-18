@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v1.1.1 - Added vertical social floating buttons.
+
     v1.1.0 - Updated courses for engineering, medical, management & hotel management.
 
     v1.0.9 - Added Courses.
