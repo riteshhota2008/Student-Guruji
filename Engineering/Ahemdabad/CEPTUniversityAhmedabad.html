@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="../../Css/styles.css">
     <link rel="stylesheet" href="../../Css/style2.css">
 
+    <style>
+
+        @media screen and (max-width: 768px) {
+            #cssmenu > ul > li.none >  a
+            {
+                display: none;
+            }
+        }
+
+    </style>
+
     <style type="text/css">
         /* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
         @media screen and (max-width: 980px) {
@@ -139,7 +150,7 @@
         <div class="navbar-header">
             <div id='cssmenu'>
                 <ul>
-                    <li><a href='#'>Student Guruji</a></li>
+                    <li class="none"><a href='#'>Student Guruji</a></li>
                     <li class='active'><a href='#'>Courses </a>
                         <ul>
                             <li><a href="../../Courses/Engineering.html">Engineering</a></li>
@@ -261,7 +272,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href='../../Exams.html'>Exams</a></li>
+                    <li><a href='../../Exams/Engineering.html'>Exams</a></li>
                     <li><a href="#" class="nav navbar-nav navbar-right">Search &nbsp;<i class="fa fa-search"></i></a></li>
                     <li><a href='../../Reviews.html'>Reviews</a></li>
                     <li><a href="../../News.html" class="nav navbar-nav navbar-right">News</a></li>
@@ -371,11 +382,11 @@
             </div>
         </div>
 
-        <div class="empty" style="margin:10px 0 0 10px">
+        <div class="container" >
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- Student Guruji - Courses -->
             <ins class="adsbygoogle"
-                style="display:inline-block;width:97%;height:80px"
+                style="display:block; height:100px !important; margin:30px auto"
                 data-ad-client="ca-pub-1082095417371051"
                 data-ad-slot="4226107525"></ins>
             <script>
@@ -650,7 +661,7 @@
 
 
         <div class="rw-ui-container"></div>
-        <script type="text/javascript">(function(d, t, e, m){
+    <!--    <script type="text/javascript">(function(d, t, e, m){
 
             // Async Rating-Widget initialization.
             window.RW_Async_Init = function(){
@@ -678,7 +689,7 @@
             rw.id = id; rw.async = true; rw.type = "text/javascript";
             rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
             s.parentNode.insertBefore(rw, s);
-        }(document, new Date(), "script", "rating-widget.com/"));</script>
+        }(document, new Date(), "script", "rating-widget.com/"));</script> -->
 
     </div>
 
@@ -715,8 +726,10 @@
 <!-- Disqus Reviews end --><!-- <br><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
         <!-- Ads responsive to resize -->
+        <div class="container">
 
         <div id="google-ads-1"></div>
+            </div>
 
         <script type="text/javascript">
 
@@ -754,7 +767,7 @@
                 google_ad_size = ["125", "125"]; /* Button (125 x 125) */
 
             document.write (
-                    '<ins class="adsbygoogle" style="display:inline-block;width:'
+                    '<ins class="adsbygoogle" style="display:block;  margin:50px auto;width:'
                     + google_ad_size[0] + 'px;height:'
                     + google_ad_size[1] + 'px" data-ad-client="'
                     + google_ad_client + '" data-ad-slot="'
@@ -783,7 +796,7 @@
 <!-- ads responsive end -->
 </div>
 
-        <!-- ******FOOTER****** --><br><br><br>
+        <!-- ******FOOTER****** -->
 
         <footer class="footer">
             <div class="footer-content">
@@ -863,7 +876,51 @@
 
 <script async src="//static.addtoany.com/menu/page.js"></script>
 
-<script type="text/javascript">CRISP_WEBSITE_ID = "-K734X41PBTRPYY7CuG1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<!--<script type="text/javascript">CRISP_WEBSITE_ID = "-K734X41PBTRPYY7CuG1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>-->
+
+<script type="text/javascript">(function(d, t, e, m){
+
+    // Async Rating-Widget initialization.
+    window.RW_Async_Init = function(){
+
+        RW.init({
+            huid: "262957",
+            uid: "963d76479cf2b776fd15177bbef99b5b",
+            source: "website",
+            options: {
+                "size": "large",
+                "style": "oxygen",
+                "isDummy": false
+            }
+        });
+        RW.render();
+    };
+    // Append Rating-Widget JavaScript library.
+    var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+            l = d.location, ck = "Y" + t.getFullYear() +
+                    "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+            f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+            a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+    if (d.getElementById(id)) return;
+    rw = d.createElement(e);
+    rw.id = id; rw.async = true; rw.type = "text/javascript";
+    rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+    s.parentNode.insertBefore(rw, s);
+}(document, new Date(), "script", "rating-widget.com/"));</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/569b8b8427b9b5d40b68e91d/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 </html>

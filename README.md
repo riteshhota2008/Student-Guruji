@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v1.1.4 - Removed multiple Logo on navbar.
+
     v1.1.3 - Installed customer support on website.
 
     v1.1.2 - Added breadcrumbs to exams & updated colleges in each state.
