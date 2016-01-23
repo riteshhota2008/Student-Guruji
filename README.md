@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v1.1.6 - Stopped multi toggle for mobile devices on navbar.
+
     v1.1.5 - Changed customer support from crisp to tawk.to.
 
     v1.1.4 - Removed multiple Logo on navbar.
