@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v1.1.8 - Updated all engineering colleges with tawk.to customer support, footer, any.do social plugin.
+
     v1.1.7 - Added accordions to all courses of engineering.
 
     v1.1.6 - Stopped multi toggle for mobile devices on navbar.
