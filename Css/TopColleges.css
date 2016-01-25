@@ -290,3 +290,7 @@
 .Blue {
     color: #006687;
 }
+
+@media screen and (max-width: 980px) {
+    .a2a_floating_style.a2a_vertical_style { display: none; }
+}

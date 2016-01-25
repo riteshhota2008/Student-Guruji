@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v2.0.1 - Updated navigation bar.
+
     v2.0.0 - Updated all management, medical & hotel management colleges with accordion courses.
 
     v1.1.9 - Updated all management, medical & hotel management colleges with tawk.to customer support, footer, any.do social plugin.

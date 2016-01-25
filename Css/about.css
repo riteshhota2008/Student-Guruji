@@ -10,7 +10,7 @@ main header {
     left: 0;
     right: 0;
     height: 25%;
-    background: url("https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=80ec55a9143ff12b524d6f35f72ac4ca");
+    background: url("../Images/AboutUs.jpg");
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
