@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Guruji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="Css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/style2.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+
+
+    <link href="Css/index.css" rel="stylesheet" type="text/css">
+    <script src="Js/index.js"></script>
+    <script src="Js/jquery-1.11.0.min.js"></script>
+    <script src="Js/jquery-ui.min.js"></script>
+
+
+
+    <!-- Css Menu -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="Js/cssmenu.js"></script>
+
+    <!-- Css Menu End -->
+
+
+    <!-- Added -->
+
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Ended -->
+
+    <!-- Scroll to top css -->
+
+    <!--    <link rel="stylesheet" href="scrolltotop.css" type="text/css"> -->
+    <script src="Js/scrolltotop.js"></script>
+
+    <!-- Scroll to top css end -->
+
+    <script>
+      $("#cssmenu").menumaker({
+        title: "Menu",
+        format: "multitoggle"
+      });
+    </script>
+
+    <!-- Algolia Search -->
+
+  <!--  <link href="//cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="//cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" /> -->
+    <script src="jquery.min.js"></script>
+    <script src="algoliasearch.min.js" type="text/javascript"></script>
+
+    <style>
+     /* .search-form {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        display: block;
+        line-height: normal;
+        color: #333;
+      }
+
+      .search-box-wrapper {
+        padding: 10px 100px;
+        font-size: 1em;
+        background-color: #122337;
+        max-width: 100%;
+        margin: 0px auto 0px auto;
+      }
+
+      .search-box {
+        margin: 0;
+        padding: 0 0 0 50px;
+        border-bottom: 2px solid white;
+        position: relative;
+      }
+
+      #inputfield i {
+        font-size: 25px;
+        color: white;
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+      }
+
+      #inputfield input {
+        width: 100%;
+        height: 45px;
+        display: block;
+        border: none;
+        color: white;
+        padding: 0;
+        font-size: 2em;
+        background-color: transparent;
+        margin: 0em;
+      }
+
+      #inputfield input::-webkit-input-placeholder { color: #4A6B82; }
+      #inputfield input::-moz-placeholder { color: #4A6B82; } /* firefox 19+ */
+   /*   #inputfield input:-ms-input-placeholder { color: #4A6B82; } /* ie */
+   /*   #inputfield inputinput:-moz-placeholder { color: #4A6B82; }
+
+      #inputfield input:focus {
+        outline-width: 0px;
+      }
+
+      .hit a{
+        color: #46AEDA;
+      }
+
+      .hit em {
+        font-size: 1em;
+        background-color: #FCF5E2;
+        font-style: normal;
+        color: #122337;
+      }
+
+      .primary-attribute{
+        font-size: 1.2em;
+        font-weight: 600;
+        display: block;
+
+      }
+
+      .secondary-attribute{
+        font-size: .9em;
+        display: inline-block;
+        font-style: italic;
+        padding: 0 .2em;
+      }
+
+      .tertiary-attribute{
+        font-size: .9em;
+        display: block;
+      }
+
+      .others-attribute{
+        border-top: dotted 1px #eee;
+        margin: 5px 0 0 0;
+        clear: both;
+        font-size: 0.85em;
+        padding: 8px 0;
+      }
+
+      .image-attribute{
+        float: left;
+        width: 40px;
+        min-height: 40px;
+        padding-top: 5px;
+        margin-right: 10px;
+      }
+
+      .image-attribute img{
+        width: 100%;
+      }
+
+      .tt-suggestion{
+        padding: 5px 10px !important;
+        margin: 0 !important;
+      }
+    </style>
+
+
+    <style>
+
+      #headerwrap {
+        background: url(Images/Education-6.jpg) no-repeat center top;
+        padding-top: 200px;
+        text-align: center;
+        background-attachment: relative;
+        background-position: center center;
+        min-height: 800px;
+        width: 100%;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        padding-bottom: 100px;
+        margin-top: 0;
+      }
+      #headerwrap h1 {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+      }
+      #headerwrap p {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+      #headerwrap .btn {
+        font-weight: 500;
+        font-size: 17px;
+        margin: 20px 0;
+        background-color: rgba(255,255,255,0);
+        color: #fff;
+        border: 1px solid #fff;
+      }
+      #headerwrap .btn:hover, #headerwrap .btn:focus {
+        color: #555;
+        background-color: #fff;
+        outline: 0px;
+        border: 1px solid #fff;
+      }
+
+
+    </style>
+
+
+
+
+
+
+    <script>
+      $("#cssmenu").menumaker({
+        title: "Menu",
+        format: "multitoggle"
+      });
+    </script>
+
+
+  </head>
+  <body>
+
+
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+
+    <div id='cssmenu'>
+      <ul>
+        <li><a href='index.html'>Student Guruji</a></li>
+        <li class='active'><a href='#'>Courses <!--<span class="caret"></span>--></a>
+          <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Courses <span class="caret"></span></a>-->
+        <ul>
+          <li><a href="Courses/Engineering.html">Engineering</a></li>
+        <li><a href="Courses/Medical.html">Medical</a></li>
+        <li><a href="Courses/Management.html">Management</a></li>
+        <li><a href="Courses/HotelManagement.html">Hotel Management</a></li>
+        </ul>
+
+        <li><a href='#'>Colleges <!--<span class="caret">--></span></a>
+          <ul>
+            <li><a href='#'>Colleges in Chennai</a>
+              <ul>
+                <li><a href='Engineering/Chennai/IITchennai.html'>IIT Madras</a></li>
+                <li><a href='Management/Chennai/IndianInstituteofManagementTrichy.html'>IIM Trichy</a></li>
+                <li><a href='Hotel%20Management/Chennai/InstituteofHotelManagementChennai.html'>IHM Chennai</a></li>
+                <li><a href='Engineering/Chennai/'>NIT Trichy</a></li>
+                <li><a href='Srmuniversity.html'>SRM University</a></li>
+                <li><a href='Engineering/Chennai/Vituniversity.html'>VIT University</a></li>
+                <li><a href='Colleges%20In/CollegesInChennai.html'>More</a></li>
+
+
+              </ul>
+            </li>
+
+
+            <li><a href='#'>Colleges in Mumbai</a>
+              <ul>
+                <li><a href="Engineering/Mumbai/IITBombay.html">IIT Bombay</a></li>
+                <li><a href='Hotel%20Management/Mumbai/InstituteofHotelManagementCateringTechnology&AppliedNutritionMumbai.html'>IHM Mumbai</a></li>
+                <li><a href='Engineering/Mumbai/MukeshPatelSchoolofTechnologyManagement&EngineeringMumbai.html'>NMIMS University</a></li>
+                <li><a href='#'>Amity University</a></li>
+                <li><a href='Engineering/Mumbai/'>D.Y. Patil University</a></li>
+                <li><a href='Engineering/Mumbai/DonBoscoInstituteofTechnologyMumbai.html'>Don Bosco Institute</a></li>
+                <li><a href='Colleges%20In/CollegesInMumbai.html'>More</a></li>
+              </ul>
+            </li>
+
+            <li><a href='#'>Colleges in Kolkata</a>
+              <ul>
+                <li><a href='Engineering/West%20Bengal/IITkharagpur.html'>IIT Kharagpur</a></li>
+                <li><a href='Engineering/West%20Bengal/NITdurgapur.html'>NIT Durgapur</a></li>
+                <li><a href='Management/Kolkata/IndianInstituteofManagementCalcutta.html'>IIM Calcutta</a></li>
+                <li><a href='Engineering/West%20Bengal/Jadavpuruniversity.html'>Jadavpur University</a></li>
+                <li><a href='#'>Goenka College</a></li>
+                <li><a href='Engineering/West%20Bengal/'>Adamas University</a></li>
+                <li><a href='Colleges%20In/CollegesInWestBengal.html'>More</a></li>
+              </ul>
+            </li>
+
+            <li><a href='#'>Colleges in Delhi</a>
+              <ul>
+                <li><a href='Engineering/Delhi/IITDelhi.html'>IIT Delhi</a></li>
+                <li><a href='Hotel%20Management/Delhi/InstituteofHotelManagementCatering&NutritionPusaNewDelhi.html'>IHM</a>
+                <li><a href='Medical/Delhi/AllIndiaInstituteofMedicalSciencesNewDelhi.html'>AIIMS</a></li>
+                <li><a href='Engineering/Delhi/NationalInstituteofTechnologyDelhi.html'>NIT Delhi</a></li>
+                <li><a href='Engineering/Delhi/'>NIIT University</a></li>
+                <li><a href='#'>Apeejay University</a></li>
+                <li><a href='Colleges%20In/CollegesInDelhi.html'>More</a></li>
+              </ul>
+            </li>
+
+            <li><a href='#'>Colleges in Bangalore</a>
+              <ul>
+                <li><a href='Management/Bangalore/IndianInstituteofManagementBangalore.html'>IIM Bangalore</a></li>
+                <li><a href='Management/Bangalore/'>Manipal University</a></li>
+                <li><a href='#'>Presidency University</a></li>
+                <li><a href='Engineering/Banglore/RevaInstituteofTechnologyandManagementBangalore.html'>Reva University</a></li>
+                <li><a href='Engineering/Banglore/PESUniversityBangalore.html'>PES University</a></li>
+                <li><a href='Engineering/Banglore/ChristUniversityBangalore.html'>Christ University</a></li>
+                <li><a href='Colleges%20In/CollegesInBangalore.html'>More</a></li>
+              </ul>
+            </li>
+
+            <li><a href='#'>Colleges in Pune</a>
+              <ul>
+                <li><a href='#'>Shastri Institute</a></li>
+                <li><a href='#'>IIAEIT</a></li>
+                <li><a href='Management/Pune/SymbiosisInstituteofBusinessManagement.html'>Symbiosis Institute</a></li>
+                <li><a href='Engineering/Pune/MaharashtraInstituteofTechnologyPune.html'>Maharashtra Institute</a></li>
+                <li><a href='Engineering/Pune/MITAcademyofEngineeringPune.html'>MIT Academy</a></li>
+                <li><a href='Engineering/Pune/VishvakarmaInstituteofInformationTechnologyPune.html'>Vishwakarma Institute</a></li>
+                <li><a href='Colleges%20In/CollegesInPune.html'>More</a></li>
+              </ul>
+            </li>
+
+            <li><a href='#'>Colleges in <!--<br></br>-->Ahmedab</a> <!-- spelling-->
+              <ul>
+                <li><a href='Management/Ahmedabad/IndianInstituteofManagementAhmedabad.html'>IIM Ahmedabad</a></li>
+                <li><a href='Engineering/Ahemdabad/IITGandhinagar.html'>IIT Gandhinagar</a></li>
+                <li><a href='Engineering/Ahemdabad/NirmaUniversityGandhinagar.html'> Nirma University</a></li>
+                <li><a href='Engineering/Ahemdabad/IndusInstituteofTechnologyandEngineeringAhmedabad.html'>Indus University</a></li>
+                <li><a href='#'>Adani Institute</a></li>
+                <li><a href='Engineering/Ahemdabad/CEPTUniversityAhmedabad.html'>Cept University</a></li>
+                <li><a href='Colleges%20In/CollegesInAhmedabad.html'>More</a></li>
+              </ul>
+            </li>
+
+            <li><a href='#'>Colleges in Andhra</a>
+              <ul>
+                <li><a href='Management/'>IIM Visakhapatnam</a></li>
+                <li><a href='Engineering/Andhra%20Pradesh/'>IIT Tirupati</a></li>
+                <li><a href='Hotel%20Management/Telangana/InstituteofHotelManagementCateringTechnology&AppliedNutritionHyderabad.html'>IHM Hyderabad</a></li>
+                <li><a href='#'>NIT Warangal</a></li>
+                <li><a href='Engineering/Andhra%20Pradesh/'>IIIT Hyderabad</a></li>
+                <li><a href='#'>Gitam University</a></li>
+                <li><a href='Colleges%20In/CollegesInAndhraPradesh.html'>More</a></li>
+              </ul>
+            </li>
+
+            <li><a href='#'>Colleges in Bhubanes</a>
+              <ul>
+                <li><a href='Engineering/Odisha/IITBhubaneswar.html'>IIT Bhubaneswar</a></li>
+                <li><a href='Engineering/Odisha/NITRourkela.html'>NIT Rourkela</a></li>
+                <li><a href='#'>AIIMS</a></li>
+                <li><a href='Engineering/Odisha/InternationalInstituteofInformationTechnologyBhubaneswar.html'>IIIT Bhubaneswar</a></li>
+                <li><a href='Engineering/Odisha/KalingaInstituteOfTechnlogy.html'>KIIT University</a></li>
+                <li><a href='Engineering/Odisha/VeerSurendraSaiUniversityofTechnology.html'>VSS University Burla</a></li>
+                <li><a href='#'>More</a></li>
+              </ul>
+            </li>
+
+            <li><a href='#'>Colleges in U.P</a>
+              <ul>
+                <li><a href='Engineering/Uttar%20Pradesh/IITKanpur.html'>IIT Kanpur</a></li>
+                <li><a href='#'>IHM Lucknow</a></li>
+                <li><a href='Engineering/Uttar%20Pradesh/MotilalNehruNationalInstituteofTechnologyAllahabad.html'>NIT Allahabad</a></li>
+                <li><a href='Engineering/Uttar%20PradeshIIITAllahabad.html'>IIIT Allahabad</a></li>
+                <li><a href='Engineering/Uttar%20Pradesh/AmitySchoolofEngineeringandTechnologyNoida.html'>Amity University,</a></li>
+                <li><a href='#'>Integral University</a></li>
+                <li><a href='Colleges%20In/CollegesInUttarPradesh.html'>More</a></li>
+              </ul>
+            </li>
+
+
+
+
+          </ul>
+        </li>
+
+        <li><a href='Exams.html'>Exams</a></li>
+        <li><a href="#" class="nav navbar-nav navbar-right">Search &nbsp;<i class="fa fa-search"></i></a></li>
+        <li><a href='Reviews.html'>Reviews</a></li>
+        <li><a href="News.html" class="nav navbar-nav navbar-right">News</a></li>
+        <li><a href="Articles.html" class="nav navbar-nav navbar-right">Articles</a></li>
+        <li><a href="Events.html" class="nav navbar-nav navbar-right">Events</a></li>
+        <li><a href="Learn.html" class="nav navbar-nav navbar-right">Learn</a></li>
+
+
+
+
+
+
+</ul>
+
+
+    </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        </div>
+      </div>  <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+      <!-- Navbar
+      ================================================== -->
+
+
+
+    <!-- ==== HEADERWRAP ==== -->
+    <div id="headerwrap" name="home">
+      <header class="clearfix">
+        <h1>Welcome to Student Guruji</h1>
+        <p class="lead">A website to guide students regarding all college stuff.</p>
+       <!-- <h1>Design, Development, Marketing.</h1>
+        <p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
+          invidunt reprehendunt nec ei. Sonet regione consulatu vel id.</p> -->
+       <!-- <a href="#portfolio" class="smoothScroll btn btn-lg">See Our Works</a> </header> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+             <!-- <h2>Custom search field</h2> -->
+
+            </div>
+          </div>
+        </div>
+        </header>
+    </div>
+    <!-- /headerwrap -->
+
+
+
+
+
+    <!-- ======================== -->
+    <!-- DEMO APPLICATION: HTML snippet -->
+    <!-- ======================== -->
+ <!--   <div class='search-box-wrapper'>
+      <div class='search-box'>
+        <div id='inputfield'>
+          <i class='fa fa-search icon-search'></i>
+          <input autocomplete='off' autocorrect='off' name='address' placeholder='Colleges..' spellcheck='false' type='text'>
+        </div>
+      </div>
+    </div>
+    <!--
+    8<---------------8<---------------8<---------------8<---------------
+    END COPY/PASTE
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<br><br>
+   <!--   <section class="row social-unified" id="king">
+        <h2 class="section-title">COMPLETE GUIDE ABOUT TOP COLLEGES</h2>
+        <h3 class="subtitle active" id="kingSubDefault">Enjoy a whole new way to know about colleges.</h3>
+        <h3 class="subtitle" id="kingSub1">Create content, all in one place.</h3>
+        <h3 class="subtitle" id="kingSub2">Maximize the effectiveness of each and every post.</h3>
+        <h3 class="subtitle" id="kingSub3">Work with your team from anywhere.</h3>
+        <h3 class="subtitle" id="kingSub4">Save time and streamline your workflow.</h3>
+        <h3 class="subtitle" id="kingSub5">Measure and make smarter decisions with social metrics.</h3>
+        <div class="social-polygon en" data-delay="2200"> <!--data-delay: delay for highlighting each div, in miliseconds-->
+ <!--         <div class="social-curate" data-sub="#kingSub1" data-href="#curate"></div>
+          <div class="social-personalize" data-sub="#kingSub2" data-href="#customize"></div>
+          <div class="social-collaborate" data-sub="#kingSub3" data-href="#collaborate"></div>
+          <div class="social-schedule" data-sub="#kingSub4" data-href="#scheduling-and-publishing"></div>
+          <div class="social-measure" data-sub="#kingSub5" data-href="#social-analytics"></div>
+        </div>
+        <div>
+  <!--        <a href="/social-media-workflow/" class="btn btn-lg btn-primary">LEARN MORE</a>   -->
+ <!--       </div>
+      </section> -->
+      <section class="row everywhere background-fixed" id="curate">
+        <h2 class="section-title">Courses</h2>
+        <h3>Get the full list of courses, all in one place.</h3>
+        <p class="section-p half-width">Student Guruji makes it easy to pull together relevant content from different sources to display a comeplete description of courses</p>
+  <!--      <a href="/content-curation/" class="btn btn-lg btn-primary">LEARN MORE</a>  -->
+      </section>
+      <section class="row schedule" id="customize">
+        <div class="col-sm-6 hidden-xs">
+          <img src="Images/Eligibility.jpg" width="454" height="300" alt="Customize" class="customize-img">
+        </div>
+        <div class="col-sm-6">
+          <h2 class="section-title">Eligibility</h2>
+          <h3>Get to know you fulfill the eligibility requirements or not?</h3>
+          <p class="section-p">Student Guruji enables you to know about the various eligibility criteria set by different colleges and whether you can apply or not.</p>
+        <!--  <a href="/post-customization/" class="btn btn-lg btn-primary">LEARN MORE</a> -->
+        </div>
+      </section>
+      <section class="row collaborate background-fixed " id="collaborate">
+        <h2 class="section-title">Placement</h2>
+        <h3>Skills developed for placement</h3>
+        <p class="section-p half-width">Get to know about how colleges prepare their students for placements and other interviews.</p>
+   <!--     <a href="/collaboration-social-media/" class="btn btn-lg btn-primary">LEARN MORE</a> -->
+      </section>
+      <section class="row results" id="scheduling-and-publishing" style="background-color: #f2f2f2">
+        <div class="col-sm-6 hidden-xs">
+          <img src="Images/Rankings.png" width="484" height="400" alt="Schedule &amp; Publish" class="schedule-img">
+        </div>
+        <div class="col-sm-6">
+          <h2 class="section-title">Rankings</h2>
+          <h3>Prioritize college according to their rankings</h3>
+          <p class="section-p">Get to know about the rankings and awards obtained by colleges and prioritize according to your convenience.</p>
+     <!--     <a href="/social-media-scheduling-publishing/" class="btn btn-lg btn-primary">LEARN MORE</a> -->
+        </div>
+      </section>
+      <section class="row measure background-fixed background-obscure background-obscure-darker" id="social-analytics">
+        <h2 class="section-title">Top Recruiters</h2>
+        <h3>Target your dream company.</h3>
+        <p class="section-p half-width">Many students would like to work in their dream companies after finishing college. Get to know which top companies recruits for your college.</p>
+  <!--      <a href="/social-media-analytics/" class="btn btn-lg btn-primary">LEARN MORE</a> -->
+      </section>
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col links col-md-3 col-sm-4 col-xs-12">
+              <div class="footer-col-inner">
+                <h4 class="title">About us</h4>
+                <ul class="list-unstyled">
+                  <li><a href="../../AboutUs.html"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                  <li><a href="../../Blog.html"><i class="fa fa-caret-right"></i>Blog</a></li>
+                  <li><a href="#"><i class="fa fa-caret-right"></i>Sitemap</a></li>
+                  <li><a href="../../ContactUs.html"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                  <!-- <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li> -->
+                </ul>
+              </div><!--//footer-col-inner-->
+            </div><!--//foooter-col-->
+            <div class="footer-col links col-md-3 col-sm-4 col-xs-12 sm-break">
+              <div class="footer-col-inner">
+                <h4 class="title">Colleges</h4>
+                <ul class="list-unstyled">
+                  <li><a href="../../Colleges%20In/CollegesInDelhi.html"><i class="fa fa-caret-right"></i>Colleges in Delhi</a></li>
+                  <li><a href="../../Colleges%20In/CollegesInMumbai.html"><i class="fa fa-caret-right"></i>Colleges in Mumbai</a></li>
+                  <li><a href="../../Colleges%20In/CollegesInWestBengal.html"><i class="fa fa-caret-right"></i>Colleges in West Bengal</a></li>
+                  <li><a href="../../Colleges%20In/CollegesInChennai.html"><i class="fa fa-caret-right"></i>Colleges in Tamil Nadu</a></li>
+                </ul>
+              </div><!--//footer-col-inner-->
+            </div><!--//foooter-col-->
+            <div class="footer-col links col-md-3 col-sm-4 col-xs-12">
+              <div class="footer-col-inner">
+                <h4 class="title">Engineering</h4>
+                <ul class="list-unstyled">
+                  <li><a href="../../TopColleges/Engineering/Delhi/TopEngineeringCollegesInDelhi.html"><i class="fa fa-caret-right"></i>Top Engineering Colleges in Delhi</a></li>
+                  <li><a href="../../TopColleges/Engineering/Mumbai/TopEngineeringCollegesInMumbai.html"><i class="fa fa-caret-right"></i>Top Engineering Colleges in Mumbai</a></li>
+                  <li><a href="../../TopColleges/Engineering/Kolkata/TopEngineeringCollegesInKolkata.html"><i class="fa fa-caret-right"></i>Top Engineering Colleges in West Bengal</a></li>
+                  <li><a href="../../TopColleges/Engineering/Chennai/TopEngineeringCollegesInChennai.html"><i class="fa fa-caret-right"></i>Top Engineering Colleges in Tamil Nadu</a></li>
+                </ul>
+              </div><!--//footer-col-inner-->
+            </div><!--//foooter-col-->
+            <div class="footer-col links col-md-3 col-sm-4 col-xs-12 sm-break">
+              <div class="footer-col-inner">
+                <h4 class="title">Management</h4>
+                <ul class="list-unstyled">
+                  <li><a href="../../TopColleges/Management/Delhi/TopMBACollegesInDelhi.html"><i class="fa fa-caret-right"></i>Top MBA Colleges in Delhi</a></li>
+                  <li><a href="../../TopColleges/Management/Mumbai/TopMBACollegesInMumbai.html"><i class="fa fa-caret-right"></i>Top MBA Colleges in Mumbai</a></li>
+                  <li><a href="../../TopColleges/Management/Kolkata/TopMBACollegesInKolkata.html"><i class="fa fa-caret-right"></i>Top MBA Colleges in Kolkata</a></li>
+                  <li><a href="../../TopColleges/Management/Chennai/TopMBACollegesInChennai.html"><i class="fa fa-caret-right"></i>Top MBA Colleges in Chennai</a></li>
+                </ul>
+              </div><!--//footer-col-inner-->
+            </div><!--//foooter-col-->
+
+          </div>
+        </div><!--//container-->
+      </div><!--//footer-content-->
+
+      <!-- Scroll to top button -->
+
+      <a href="#0" class="cd-top"></a>
+
+      <!-- Scroll to top button ended -->
+
+      <div class="bottom-bar">
+        <div class="container">
+          <small class="copyright">Copyright @ 2015 <a href="#" target="_blank">Ubiquos Inc</a></small>
+          <!--       <script>var sharebutton_is_horizontal = false; document.write('<script src="//cdn.script.to/share2.js"></scr' + 'ipt>'); document.write("<div style='display: none'>");</script><a href="http://sharebutton.org/">social share buttons</a><script>document.write("</div>");</script> -->
+        </div><!--//container-->
+      </div><!--//bottom-bar-->
+    </footer><!--//footer-->
+
+    <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:280px;">
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_google_plus"></a>
+      <a class="a2a_button_pinterest"></a>
+      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    </div>
+
+    <script async src="//static.addtoany.com/menu/page.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/569b8b8427b9b5d40b68e91d/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+
+
+
+    <!-- ======================== -->
+    <!-- DEMO APPLICATION: javascript snippet -->
+      <!-- ======================== -->
+    <script>
+      // Helper
+      Number.prototype.number_with_delimiter = function(delimiter) {
+        var number = this + '', delimiter = delimiter || ',';
+        var split = number.split('.');
+        split[0] = split[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + delimiter);
+        return split.join('.');
+      };
+
+      // strip HTML tags + keep <em>, <p>, <b>, <i>, <u>, <strong>
+      function stripTags(v) {
+        return $('<div />').text(v).html().replace(/&lt;(\/)?(em|p|b|i|u|strong)&gt;/g, '<$1$2>');
+      }
+
+      //helper attribute multiple (ie: categories)
+      function objToString(obj) {
+        var str = '';
+        for (var p in obj) {
+          if (obj.hasOwnProperty(p)) {
+            str += str === '' ? '' : ' - ';
+            str += obj[p];
+          }
+        }
+        return str;
+      }
+
+      // return attribute or highlighted attribute
+      function getAttributeValue(attr_string, hit){
+        var v = getStringAttributeFromObject(attr_string, hit._highlightResult);
+        return v ? v : getStringAttributeFromObject(attr_string, hit);
+      }
+
+      // handle attribute from tree
+      function getStringAttributeFromObject(attr_string, hit) {
+        var attr_array = attr_string.split(".");
+        var attr = hit;
+        $.each(attr_array, function(i) {
+          attr = attr && attr[attr_array[i]];
+        });
+        if (!attr) {
+          return false;
+        }
+        if (attr.value) {
+          // we're on a highlighted form
+          return attr.value;
+        }
+        if (Object.prototype.toString.call(attr) === '[object Array]') {
+          var str = [];
+          $.each(attr, function(i, e) {
+            if (e && typeof e === 'string') {
+              str.push(e);
+            } else if (e && e.value) {
+              str.push(e.value);
+            } else if (e) {
+              str.push(objToString(e));
+            }
+          });
+          return str.join(', ');
+        }
+        if (typeof attr === 'object') {
+          attr = objToString(attr);
+        }
+        return '' + attr;
+      }
+
+      // attribute to skip every time
+      var skip = [
+        'objectID',
+        '_highlightResult'
+      ];
+
+      // attribute to skip at the end since it can be multi-attribute
+      var attributeToSkip = [];
+      if ('College_Name' !== ''){
+        attributeToSkip.push('College_Name');
+      }
+      if ('' !== ''){
+        attributeToSkip.push('');
+      };
+      if ('' !== ''){
+        attributeToSkip.push('');
+      };
+
+      // retrieve all keys and remove skipped ones
+      function retrieveAllAttributes(hit){
+        var i = 0;
+        var allkeys = [];
+        iterate(hit, '' , allkeys);
+        for (var attr in attributeToSkip){
+          var s = allkeys.indexOf(attributeToSkip[attr]);
+          if(s != -1) {
+            allkeys.splice(s, 1);
+          }
+        }
+        return allkeys;
+      }
+
+      // recursively find keys in object
+      function iterate(obj, stack , allkeys) {
+        var dot = stack === '' ? '' : '.';
+        for (var property in obj) {
+          if ( obj.hasOwnProperty(property) && skip.indexOf(property) === -1 ) {
+            if (typeof obj[property] === "object") {
+              if (Object.prototype.toString.call(obj[property]) === '[object Array]') {
+                allkeys.push(stack + dot + property);
+              } else {
+                iterate(obj[property], stack + dot + property, allkeys);
+              }
+            } else {
+              allkeys.push(stack + dot + property);
+            }
+          }
+        }
+      }
+
+      $(function() {
+        var algolia = algoliasearch('EX7U0YCHF7', '4684f8d2cee20a702720be556bfe0a24');
+        var index = algolia.initIndex('test');
+
+        $("#inputfield input").typeahead(null, {
+          source: index.ttAdapter({ hitsPerPage: 5 }),
+          displayKey: 'College_Name',
+          templates: {
+            suggestion: function(hit) {
+              // render the hit
+              var res = '<div class="hit">';
+              /// hit image ?
+              if ('' !== '') {
+                var v = getStringAttributeFromObject('',hit);
+                res += '<img class="image-attribute" src="' + stripTags(v) + '"/>';
+              }
+              // hit title (primary attribute)
+              if ('College_Name' !== '') {
+                var v = getAttributeValue('College_Name',hit);
+                res += '<span class="primary-attribute">';
+                if ('College_Link' !== '') {
+                  res += '<a href="' + getStringAttributeFromObject('College_Link', hit) + '">';
+                  res += stripTags(v);
+                  res += '</a>';
+                } else {
+                  res += stripTags(v);
+                }
+                res += '</span>';
+              }
+              // hit subtitle (secondary attribute)
+              if ('' !== '') {
+                var v = getAttributeValue('',hit);
+                if (v && v.trim() !== '') {
+                  res += '<span class="secondary-attribute">';
+                  res += stripTags(v);
+                  res += '</span>';
+                }
+              }
+              // hit description (tertiary attribute)
+              if ('' !== '') {
+                var v = getAttributeValue('',hit);
+                if (v && v.trim() !== '') {
+                  res += '<span class="tertiary-attribute">';
+                  res += stripTags(v);
+                  res += '</span>';
+                }
+              }
+              // display all other attributes?
+              if (false) {
+                var allkeys = retrieveAllAttributes(hit);
+                if (allkeys.length > 0){
+                  res += '<dl class="dl-horizontal others-attribute">';
+                  for (var attr in allkeys) {
+                    var v = getAttributeValue(allkeys[attr],hit);
+                    if (v && v.trim() !== '') {
+                      res += "<dt>" + stripTags(allkeys[attr]) + ": </dt><dd>" + stripTags(v) + "</dd>";
+                    }
+                  }
+                  res += '</dl>';
+                }
+              }
+              res += "<span class='clearfix'></span>"
+              return res;
+            }
+          }
+        }).on('typeahead:selected', function(event, suggestion, dataset) {
+          if (stripTags('College_Link') !== '') {
+            var url = getStringAttributeFromObject('College_Link', suggestion);
+            var urlRegex = new RegExp(
+                    "^" +
+                      // protocol identifier
+                    "(?:(?:https?|ftp)://)" +
+                      // user:pass authentication
+                    "(?:\\S+(?::\\S*)?@)?" +
+                    "(?:" +
+                      // IP address exclusion
+                      // private & local networks
+                    "(?!(?:10|127)(?:\\.\\d{1,3}){3})" +
+                    "(?!(?:169\\.254|192\\.168)(?:\\.\\d{1,3}){2})" +
+                    "(?!172\\.(?:1[6-9]|2\\d|3[0-1])(?:\\.\\d{1,3}){2})" +
+                      // IP address dotted notation octets
+                      // excludes loopback network 0.0.0.0
+                      // excludes reserved space >= 224.0.0.0
+                      // excludes network & broacast addresses
+                      // (first & last IP address of each class)
+                    "(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])" +
+                    "(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}" +
+                    "(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))" +
+                    "|" +
+                      // host name
+                    "(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)" +
+                      // domain name
+                    "(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*" +
+                      // TLD identifier
+                    "(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))" +
+                      // TLD may end with dot
+                    "\\.?" +
+                    ")" +
+                      // port number
+                    "(?::\\d{2,5})?" +
+                      // resource path
+                    "(?:[/?#]\\S*)?" +
+                    "$", "i"
+            );
+
+            if (url.match(urlRegex)) {
+              location.href = url;
+            }
+          }
+        });
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  </body>
+</html>
