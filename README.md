@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v2.0.3 - Updated styling of Index Page.
+    
     v2.0.2 - Updated Index Page.
     
     v2.0.1 - Updated navigation bar.
