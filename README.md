@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v2.0.4 - Added Engineering colleges of Punjab.
+    
     v2.0.3 - Updated styling of Index Page.
     
     v2.0.2 - Updated Index Page.
