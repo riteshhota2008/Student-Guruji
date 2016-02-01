@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v2.0.7 - Updated footer links for all colleges.
+    
     v2.0.6 - Updated navigation links of all colleges.
     
     v2.0.5 - Updated websites and mail address of all engineering colleges.
