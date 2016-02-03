@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v2.0.9 - Updated all contents for chennai engineering colleges.
+    
     v2.0.8 - Updated all contents for ahmedabad engineering colleges.
     
     v2.0.7 - Updated footer links for all colleges.
