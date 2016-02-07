@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v3.0.3 - Updated all contents for Management Colleges of U.P & M.P.
+    
     v3.0.2 - Updated all contents for Management Colleges of Delhi, Kerala, West Bengal.
     
     v3.0.1 - Updated all contents for Management Colleges of Gujarat, Karnataka, Tamil Nadu.
