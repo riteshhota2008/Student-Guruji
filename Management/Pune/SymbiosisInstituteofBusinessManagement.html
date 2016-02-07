@@ -108,55 +108,6 @@
     </style>
 
 
-    <!-- Search Js -->
-
-    <script>
-
-        $(function () {
-            $('a[href="#search"]').on('click', function(event) {
-                event.preventDefault();
-                $('#search').addClass('open');
-                $('#search > form > input[type="search"]').focus();
-            });
-
-            $('#search, #search button.close').on('click keyup', function(event) {
-                if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
-                    $(this).removeClass('open');
-                }
-            });
-
-
-        });
-
-    </script>
-
-    <!-- Search Js end -->
-
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-    <script src="../bower_components/respond/dest/respond.min.js"></script>
-    <script src="../assets/js/script.js"></script>
-    <![endif]-->
-    <script>
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-23019901-1']);
-        _gaq.push(['_setDomainName', "bootswatch.com"]);
-        _gaq.push(['_setAllowLinker', true]);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-
-
 
     <script>
         $("#cssmenu").menumaker({
@@ -174,215 +125,143 @@
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-
             <div id='cssmenu'>
                 <ul>
-                    <li><a href='../../index.html'>Student Guruji</a></li>
-                    <li class='active'><a href='#'>Courses <!--<span class="caret"></span>--></a>
-                        <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Courses <span class="caret"></span></a>-->
+                    <li class="none"><a href='../../index.html'>Student Guruji</a></li>
+                    <li class='active'><a href='../../Courses/Courses.html'>Courses </a>
                         <ul>
-                            <li><a href="../cerulean/">Engineering</a></li>
-                            <li><a href="../cosmo/">Medical</a></li>
-                            <li><a href="../cyborg/">MBA</a></li>
-                            <li><a href="../darkly/">Hotel Management</a></li>
-                            <li><a href="../flatly/">Banking & Finance</a></li>
-                            <li><a href="../journal/">Science</a></li>
-                            <li><a href="../lumen/">Arts</a></li>
-                            <li><a href="../paper/">Commerce</a></li>
-                            <li><a href="../readable/">Fasion Designing</a></li>
-                            <li><a href="../sandstone/">Film Institute</a></li>
+                            <li><a href="../../Courses/Engineering.html">Engineering</a></li>
+                            <li><a href="../../Courses/Medical.html">Medical</a></li>
+                            <li><a href="../../Courses/Management.html">Management</a></li>
+                            <li><a href="../../Courses/HotelManagement.html">Hotel Management</a></li>
                         </ul>
-
-
-                    <li><a href='#'>Colleges <!--<span class="caret"></span>--></a>
+                    <li><a href='../../Colleges/Colleges.html'>Colleges</a>
                         <ul>
-                            <li><a href='#'>Colleges in Chennai</a>
+                            <li><a href='#'>Tamil Nadu</a>
                                 <ul>
-                                    <li><a href='../../IITchennai.html'>IIT Madras</a></li>
-                                    <li><a href='#'>IIM Trichy</a></li>
-                                    <li><a href='#'>IHM Chennai</a></li>
-                                    <li><a href='#'>NIT Trichy</a></li>
-                                    <li><a href='../../Srmuniversity.html'>SRM University</a></li>
-                                    <li><a href='../../Vituniversity.html'>VIT University</a></li>
-                                    <li><a href='#'>More</a></li>
-
-
+                                    <li><a href='../../Engineering/Chennai/IITchennai.html'>IIT Madras</a></li>
+                                    <li><a href='../../Management/Chennai/IndianInstituteofManagementTrichy.html'>IIM Trichy</a></li>
+                                    <li><a href='../../Hotel%20Management/Chennai/InstituteofHotelManagementChennai.html'>IHM Chennai</a></li>
+                                    <li><a href='../../Engineering/Chennai/NITTrichy.html'>NIT Trichy</a></li>
+                                    <li><a href='../../Engineering/Chennai/Srmuniversity.html'>SRM University</a></li>
+                                    <li><a href='../../Engineering/Chennai/Vituniversity.html'>VIT University</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInChennai.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-
-                            <li><a href='#'>Colleges in Mumbai</a>
+                            <li><a href='#'>Mumbai</a>
                                 <ul>
                                     <li><a href="../../Engineering/Mumbai/IITBombay.html">IIT Bombay</a></li>
-                                    <li><a href='#'>IHM Mumbai</a></li>
+                                    <li><a href='../../Hotel%20Management/Mumbai/InstituteofHotelManagementCateringTechnology&AppliedNutritionMumbai.html'>IHM Mumbai</a></li>
+                                    <li><a href='../../Management/Mumbai/SPJainInstituteofManagementandResearch.html'>S P Jain Institute</a></li>
                                     <li><a href='../../Engineering/Mumbai/MukeshPatelSchoolofTechnologyManagement&EngineeringMumbai.html'>NMIMS University</a></li>
-                                    <li><a href='#'>Amity University</a></li>
-                                    <li><a href='#'>D.Y. Patil University</a></li>
+                                    <li><a href='../../Management/Mumbai/JamnalalBajajInstituteofManagementStudies.html'>Jamnalal Institute</a></li>
+                                    <li><a href='../../Medical/Mumbai/GrantMedicalCollegeMumbai.html'>Grant Medical College</a></li>
                                     <li><a href='../../Engineering/Mumbai/DonBoscoInstituteofTechnologyMumbai.html'>Don Bosco Institute</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInMumbai.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href='#'>Colleges in Kolkata</a>
+                            <li><a href='#'>West Bengal</a>
                                 <ul>
-                                    <li><a href='../../IITkharagpur.html'>IIT Kharagpur</a></li>
-                                    <li><a href='../../NITdurgapur.html'>NIT Durgapur</a></li>
-                                    <li><a href='#'>IIM Calcutta</a></li>
-                                    <li><a href='../../Jadavpuruniversity.html'>Jadavpur University</a></li>
-                                    <li><a href='#'>Goenka College</a></li>
-                                    <li><a href='#'>Adamas University</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Engineering/West%20Bengal/IITkharagpur.html'>IIT Kharagpur</a></li>
+                                    <li><a href='../../Engineering/West%20Bengal/NITdurgapur.html'>NIT Durgapur</a></li>
+                                    <li><a href='../../Management/Kolkata/IndianInstituteofManagementCalcutta.html'>IIM Calcutta</a></li>
+                                    <li><a href='../../Engineering/West%20Bengal/Jadavpuruniversity.html'>Jadavpur University</a></li>
+                                    <li><a href='../../Hotel%20Management/Kolkata/InstituteofHotelManagementKolkata.html'>IHM Kolkata</a></li>
+                                    <li><a href='../../Medical/Kolkata/MedicalCollegeKolkata.html'>Medical College</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInWestBengal.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href='#'>Colleges in Delhi</a>
+                            <li><a href='#'>Delhi</a>
                                 <ul>
                                     <li><a href='../../Engineering/Delhi/IITDelhi.html'>IIT Delhi</a></li>
-                                    <li><a href='#'>IHM</a>
-                                    <li><a href='#'>AIIMS</a></li>
+                                    <li><a href='../../Hotel%20Management/Delhi/InstituteofHotelManagementCatering&NutritionPusaNewDelhi.html'>IHM</a>
+                                    <li><a href='../../Medical/Delhi/AllIndiaInstituteofMedicalSciencesNewDelhi.html'>AIIMS</a></li>
                                     <li><a href='../../Engineering/Delhi/NationalInstituteofTechnologyDelhi.html'>NIT Delhi</a></li>
-                                    <li><a href='#'>NIIT University</a></li>
-                                    <li><a href='#'>Apeejay University</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Engineering/Delhi/DelhiTechnologicalUniversity.html'>DTU</a></li>
+                                    <li><a href='../../Management/Delhi/FacultyofManagementStudiesUniversityofDelhi.html'>FMS</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInDelhi.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href='#'>Colleges in Bangalore</a>
+                            <li><a href='#'>Karnataka</a>
                                 <ul>
-                                    <li><a href='#'>IIM Bangalore</a></li>
-                                    <li><a href='#'>Manipal University</a></li>
-                                    <li><a href='#'>Presidency University</a></li>
+                                    <li><a href='../../Management/Bangalore/IndianInstituteofManagementBangalore.html'>IIM Bangalore</a></li>
+                                    <li><a href='../../Engineering/Banglore/MIT.html'>Manipal University</a></li>
+                                    <li><a href='../../Hotel%20Management/Bangalore/InstituteofHotelManagementBangalore.html'>IHM Bangalore</a></li>
                                     <li><a href='../../Engineering/Banglore/RevaInstituteofTechnologyandManagementBangalore.html'>Reva University</a></li>
                                     <li><a href='../../Engineering/Banglore/PESUniversityBangalore.html'>PES University</a></li>
-                                    <li><a href='#'>Christ University</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Engineering/Banglore/ChristUniversityBangalore.html'>Christ University</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInBangalore.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href='#'>Colleges in Pune</a>
+                            <li><a href='#'>Pune</a>
                                 <ul>
-                                    <li><a href='#'>Shastri Institute</a></li>
-                                    <li><a href='#'>IIAEIT</a></li>
-                                    <li><a href='#'>Symbiosis Institute</a></li>
-                                    <li><a href='#'>Maharashtra Institute</a></li>
-                                    <li><a href='#'>MIT Academy</a></li>
+                                    <li><a href='../../Engineering/Pune/CollegeOfEngineeringPune.html'>College of Engineering</a></li>
+                                    <li><a href='../../Management/Pune/FLAMEUniversity.html'>Flame University</a></li>
+                                    <li><a href='../../Management/Pune/SymbiosisInstituteofBusinessManagement.html'>Symbiosis Institute</a></li>
+                                    <li><a href='../../Engineering/Pune/MaharashtraInstituteofTechnologyPune.html'>Maharashtra Institute</a></li>
+                                    <li><a href='../../Engineering/Pune/MITAcademyofEngineeringPune.html'>MIT Academy</a></li>
                                     <li><a href='../../Engineering/Pune/VishvakarmaInstituteofInformationTechnologyPune.html'>Vishwakarma Institute</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInPune.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href='#'>Colleges in <!--<br></br>-->Ahmedab</a> <!-- spelling-->
+                            <li><a href='#'>Gujarat</a>
                                 <ul>
-                                    <li><a href='#'>IIM Ahmedabad</a></li>
+                                    <li><a href='../../Management/Ahmedabad/IndianInstituteofManagementAhmedabad.html'>IIM Ahmedabad</a></li>
                                     <li><a href='../../Engineering/Ahemdabad/IITGandhinagar.html'>IIT Gandhinagar</a></li>
                                     <li><a href='../../Engineering/Ahemdabad/NirmaUniversityGandhinagar.html'> Nirma University</a></li>
-                                    <li><a href='../../Engineering/Ahemdabad/NirmaUniversityGandhinagar.html'>Indus University</a></li>
-                                    <li><a href='#'>Adani Institute</a></li>
-                                    <li><a href='#'>Navrangpura Institute</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Engineering/Ahemdabad/IndusInstituteofTechnologyandEngineeringAhmedabad.html'>Indus University</a></li>
+                                    <li><a href='../../Management/Ahmedabad/AdaniInstituteofInfrastructureManagementAhmedabad.html'>Adani Institute</a></li>
+                                    <li><a href='../../Medical/Ahmedabad/BJMedicalCollegeAhmedabad.html'>BJ Medical College</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInAhmedabad.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href='#'>Colleges in Andhra</a>
+                            <li><a href='#'>Andhra Pradesh</a>
                                 <ul>
-                                    <li><a href='#'>IIM Visakhapatnam</a></li>
-                                    <li><a href='#'>IIT Tirupati</a></li>
-                                    <li><a href='#'>IHM Hyderabad</a></li>
-                                    <li><a href='#'>NIT Warangal</a></li>
-                                    <li><a href='#'>IIIT Hyderabad</a></li>
-                                    <li><a href='#'>Gitam University</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Engineering/Andhra%20Pradesh/GMRInstituteofTechnologyRajam.html'>GMR Institute</a></li>
+                                    <li><a href='../../Engineering/Andhra%20Pradesh/RVR&JCCollegeofEngineeringGuntur.html'>RVR & JC College</a></li>
+                                    <li><a href='../../Engineering/Andhra%20Pradesh/AUCollegeofEngineeringVishakhapatnam.html'>Andhra Univeristy</a></li>
+                                    <li><a href='../../Engineering/Andhra%20Pradesh/JNTUACollegeofEngineeringAnanthapur.html'>JNTUA</a></li>
+                                    <li><a href='../../Medical/Andhra%20Pradesh/AndhraMedicalCollegeVisakhapatnam.html'>Andhra Medical</a></li>
+                                    <li><a href='../../Engineering/Andhra%20Pradesh/GITAMUniversityVisakhapatnam.html'>Gitam University</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInAndhraPradesh.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href='#'>Colleges in Bhubanes</a>
+                            <li><a href='#'>Odisha</a>
                                 <ul>
-                                    <li><a href='../../IITBhubaneswar.html'>IIT Bhubaneswar</a></li>
-                                    <li><a href='../../NITRourkela.html'>NIT Rourkela</a></li>
-                                    <li><a href='#'>AIIMS</a></li>
-                                    <li><a href='../../InternationalInstituteofInformationTechnologyBhubaneswar.html'>IIIT Bhubaneswar</a></li>
-                                    <li><a href='../../KalingaInstituteOfTechnlogy.html'>KIIT University</a></li>
-                                    <li><a href='../../VeerSurendraSaiUniversityofTechnology.html'>VSS University Burla</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Engineering/Odisha/IITBhubaneswar.html'>IIT Bhubaneswar</a></li>
+                                    <li><a href='../../Engineering/Odisha/NITRourkela.html'>NIT Rourkela</a></li>
+                                    <li><a href='../../Engineering/Odisha/CollegeOfEngineeringBhubaneswar.html'>CET</a></li>
+                                    <li><a href='../../Engineering/Odisha/InternationalInstituteofInformationTechnologyBhubaneswar.html'>IIIT Bhubaneswar</a></li>
+                                    <li><a href='../../Engineering/Odisha/KalingaInstituteOfTechnlogy.html'>KIIT University</a></li>
+                                    <li><a href='../../Engineering/Odisha/VeerSurendraSaiUniversityofTechnology.html'>VSS University Burla</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInOdisha.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href='#'>Colleges in U.P</a>
+                            <li><a href='#'>Uttar Pradesh</a>
                                 <ul>
-                                    <li><a href='../../IITKanpur.html'>IIT Kanpur</a></li>
-                                    <li><a href='#'>IHM Lucknow</a></li>
-                                    <li><a href='../../MotilalNehruNationalInstituteofTechnologyAllahabad.html'>NIT Allahabad</a></li>
-                                    <li><a href='../../IIITAllahabad.html'>IIIT Allahabad</a></li>
-                                    <li><a href='#'>Amity University,</a></li>
-                                    <li><a href='#'>Integral University</a></li>
-                                    <li><a href='#'>More</a></li>
+                                    <li><a href='../../Engineering/Uttar%20Pradesh/IITKanpur.html'>IIT Kanpur</a></li>
+                                    <li><a href='../../Engineering/Uttar%20Pradesh/IIITAllahabad.html'>IIIT Allahabad</a></li>
+                                    <li><a href='../../Engineering/Uttar%20Pradesh/MotilalNehruNationalInstituteofTechnologyAllahabad.html'>NIT Allahabad</a></li>
+                                    <li><a href='../../Engineering/Uttar%20Pradesh/IITBHUVaranasi.html'>IIT BHU</a></li>
+                                    <li><a href='../../Engineering/Uttar%20Pradesh/AmitySchoolofEngineeringandTechnologyNoida.html'>Amity University</a></li>
+                                    <li><a href='../../Management/Lucknow/IndianInstituteofManagementLucknow.html'>IIM Lucknow</a></li>
+                                    <li><a href='../../Colleges%20In/CollegesInUttarPradesh.html'>More . . . .</a></li>
                                 </ul>
                             </li>
-
-
-
-
-
                         </ul>
                     </li>
-
-                    <li><a href="#search">Search &nbsp; <i class="fa fa-search"></i></a></li>
-
-                    <!-- <li><a href='#'>Reviews</a></li> -->
-                    <!--<li><a href='#'>Register</a></li>
-                    <li><a href='#'>Log In</a></li>-->
-
-
-
-                    <!--<li><a href="reviews.php">Reviews</a></li> <!-- new added -->
-                    <!--  <li><a href="register.php" class="nav navbar-nav navbar-right">Login</a></li> -->
-                    <!-- <li class="divider-vertical"></li>
-                     <li class="dropdown">
-                         <a class="dropdown-toggle" href="#" data-toggle="dropdown" class="nav navbar-nav navbar-right" target="_blank">Log In <strong class="caret"></strong></a>
-                         <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-                             <form action="index.php" method="post">
-                                 Username:<br />
-                                 <input type="text" name="username" value="<?php echo $submitted_username; ?>" />
-                                 <br /><br />
-                                 Password:<br />
-                                 <input type="password" name="password" value="" />
-                                 <br /><br />
-                                 <input type="submit" class="btn btn-info" value="Login" />
-                             </form>
-                         </div>
-                     </li> -->
-
-                    <!-- Search Bar -->
-
-
-                    <div id="search">
-                        <button type="button" class="close">×</button>
-                        <form>
-                            <input type="search" value="" placeholder="Search for Colleges..." />
-                            <button type="submit" class="btn btn-primary">Search</button>
-                        </form>
-                    </div>
-
-
-                    <!------------->
-                    <!--  <div class="col-sm-3 col-md-5">
-                          <form class="navbar-form" role="search">
-                              <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="Search" name="q">
-                                  <div class="input-group-btn">
-                                      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-
-          <!-- Search Bar end -->
-</ul>
+                    <li><a href='../../Exams/Engineering.html'>Exams</a></li>
+                    <li><a href="../../Search.html" class="nav navbar-nav navbar-right">Search &nbsp;<i class="fa fa-search"></i></a></li>
+                    <li><a href='../../Reviews.html'>Reviews</a></li>
+                    <li><a href="../../News.html" class="nav navbar-nav navbar-right">News</a></li>
+                    <li><a href="../../Articles.html" class="nav navbar-nav navbar-right">Articles</a></li>
+                    <li><a href="../../Events.html" class="nav navbar-nav navbar-right">Events</a></li>
+                    <li><a href="../../Learn.html" class="nav navbar-nav navbar-right">Learn</a></li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-
 
 <div class="container"><br><br><br>
 
@@ -506,14 +385,15 @@
                 <div class="panel panel-default" >
                     <a data-toggle="collapse" href="#collapse1">
                         <div class="panel-heading">
-                            <h4 class="panel-title">B.Tech</h4>
+                            <h4 class="panel-title">MBA</h4>
                         </div>
                     </a>
                     <div id="collapse1" class="panel-collapse collapse">
                         <ul class="list-group">
-                            <li class="list-group-item">Computer Science</li>
-                            <li class="list-group-item">Mechanical</li>
-                            <li class="list-group-item">Elecronics</li>
+                            <li class="list-group-item">Finance</li>
+                            <li class="list-group-item">Human Resources</li>
+                            <li class="list-group-item">Marketing</li>
+                            <li class="list-group-item">Operations</li>
                         </ul>
                     </div>
                 </div>
@@ -524,14 +404,101 @@
                 <div class="panel panel-default" style="margin: 10px 0 0 10px;width: 95%">
                     <a data-toggle="collapse" href="#collapse2">
                         <div class="panel-heading">
-                            <h4 class="panel-title">M.Tech</h4>
+                            <h4 class="panel-title">Post Graduate Diploma in Marketing Management (PGDMM)</h4>
                         </div>
                     </a>
                     <div id="collapse2" class="panel-collapse collapse">
                         <ul class="list-group">
-                            <li class="list-group-item">Computer Science</li>
-                            <li class="list-group-item">Mechanical</li>
-                            <li class="list-group-item">Elecronics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel-group" >
+                <div class="panel panel-default" style="margin: 10px 0 0 10px;width: 95%">
+                    <a data-toggle="collapse" href="#collapse3">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">PG Diploma in Human Resource Management (PGDHRM)</h4>
+                        </div>
+                    </a>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <ul class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel-group" >
+                <div class="panel panel-default" style="margin: 10px 0 0 10px;width: 95%">
+                    <a data-toggle="collapse" href="#collapse4">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Post Graduate Program in Operations Management (PGP-OM)</h4>
+                        </div>
+                    </a>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <ul class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel-group" >
+                <div class="panel panel-default" style="margin: 10px 0 0 10px;width: 95%">
+                    <a data-toggle="collapse" href="#collapse5">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Postgraduate Diploma in Financial Management (PGDFM)</h4>
+                        </div>
+                    </a>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <ul class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel-group" >
+                <div class="panel panel-default" style="margin: 10px 0 0 10px;width: 95%">
+                    <a data-toggle="collapse" href="#collapse6">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">PDDRM</h4>
+                        </div>
+                    </a>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <ul class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel-group" >
+                <div class="panel panel-default" style="margin: 10px 0 0 10px;width: 95%">
+                    <a data-toggle="collapse" href="#collapse7">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Postgraduate Diploma in Innovation and Corporate Entrepreneurship (PGDICE)</h4>
+                        </div>
+                    </a>
+                    <div id="collapse7" class="panel-collapse collapse">
+                        <ul class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel-group" >
+                <div class="panel panel-default" style="margin: 10px 0 0 10px;width: 95%">
+                    <a data-toggle="collapse" href="#collapse8">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Post Graduate Diploma in Family Business & Entrepreneurship</h4>
+                        </div>
+                    </a>
+                    <div id="collapse8" class="panel-collapse collapse">
+                        <ul class="list-group">
                         </ul>
                     </div>
                 </div>
@@ -552,10 +519,7 @@
 
 
     <ul><!--move-right-->
-        <li><h3>B.Tech.</h3></li>       <!-- Change ths -->
-        <p>A pass in 10+2 or its equivalent.</p>
-        <li>For all programs: Minimum 70% aggregate in Mathematics, Physics & Chemistry.</li>
-        <li>For Bioinformatics, Biotechnology, Biomedical Engineering and Genetic Engineering: Minimum 70% aggregate in Mathematics / Biology, Physics and Chemistry.</li>
+        <li>A graduate from any statutory university with a minimum of 50% marks (45% for SC/ST) at graduation level.Student appearing for final year examinations can also apply, but their admission will be subject to obtaining a minimum of 50% marks (45% for SC/ST) at qualifying examination.</li>
     </ul>
 
 
@@ -623,58 +587,6 @@
         <li>Number of PPOs : 65</li>
         <li>Number of accepted offers above 12 lakhs : 115</li>
     </ul>
-
-
-    <!-- Top Recruiting companies -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="page-header">
-                    <h1 id="type">Top Recruiting Companies</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <ul><!--move-right-->
-        <li>NA</li>
-    </ul>
-
-
-    <!-- Ranking and awards -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="page-header">
-                    <h1 id="type">Rankings & Awards</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <ul><!--move-right-->
-        <li>NA</li>
-    </ul>
-
-
-    <!-- Infrastructure -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="page-header">
-                    <h1 id="type">Infrastructure</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <ul><!--move-right-->
-        <li>NA</li>
-    </ul>
-
 
     <!-- Contact -->
 
@@ -861,160 +773,99 @@
         <!-- ads responsive end -->
 
 </div>
-        <!-- ******FOOTER****** --><br><br><br>
 
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
-                            <div class="footer-col-inner">
-                                <h3 class="title">About us</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Who we are</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Press</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
-                                </ul>
-                            </div><!--//footer-col-inner-->
-                        </div><!--//foooter-col-->
-                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
-                            <div class="footer-col-inner">
-                                <h3 class="title">Product</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>How it works</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>API</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Download Apps</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Pricing</a></li>
-                                </ul>
-                            </div><!--//footer-col-inner-->
-                        </div><!--//foooter-col-->
-                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
-                            <div class="footer-col-inner">
-                                <h3 class="title">Support</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>
-                                </ul>
-                            </div><!--//footer-col-inner-->
-                        </div><!--//foooter-col-->
+<!-- ******FOOTER****** --><br><br><br>
 
-                        <!-- More options added -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col links col-md-3 col-sm-4 col-xs-12">
+                    <div class="footer-col-inner">
+                        <h3 class="title">About us</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="../../AboutUs.html"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                            <li><a href="../../Blog.html"><i class="fa fa-caret-right"></i>Blog</a></li>
+                            <li><a href="#"><i class="fa fa-caret-right"></i>Sitemap</a></li>
+                            <li><a href="../../ContactUs.html"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                            <!-- <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li> -->
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
+                <div class="footer-col links col-md-3 col-sm-4 col-xs-12 sm-break">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Colleges</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="../../Colleges%20In/CollegesInDelhi.html"><i class="fa fa-caret-right"></i>Colleges in Delhi</a></li>
+                            <li><a href="../../Colleges%20In/CollegesInMumbai.html"><i class="fa fa-caret-right"></i>Colleges in Mumbai</a></li>
+                            <li><a href="../../Colleges%20In/CollegesInWestBengal.html"><i class="fa fa-caret-right"></i>Colleges in West Bengal</a></li>
+                            <li><a href="../../Colleges%20In/CollegesInChennai.html"><i class="fa fa-caret-right"></i>Colleges in Tamil Nadu</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
+                <div class="footer-col links col-md-3 col-sm-4 col-xs-12">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Engineering</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="../../TopColleges/Engineering/Delhi/TopEngineeringCollegesInDelhi.html"><i class="fa fa-caret-right"></i>Top Engineering Colleges in Delhi</a></li>
+                            <li><a href="../../TopColleges/Engineering/Mumbai/TopEngineeringCollegesInMumbai.html"><i class="fa fa-caret-right"></i>Top Engineering Colleges in Mumbai</a></li>
+                            <li><a href="../../TopColleges/Engineering/Kolkata/TopEngineeringCollegesInKolkata.html"><i class="fa fa-caret-right"></i>Top Engineering Colleges in West Bengal</a></li>
+                            <li><a href="../../TopColleges/Engineering/Chennai/TopEngineeringCollegesInChennai.html"><i class="fa fa-caret-right"></i>Top Engineering Colleges in Tamil Nadu</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
+                <div class="footer-col links col-md-3 col-sm-4 col-xs-12 sm-break">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Management</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="../../TopColleges/Management/Delhi/TopMBACollegesInDelhi.html"><i class="fa fa-caret-right"></i>Top MBA Colleges in Delhi</a></li>
+                            <li><a href="../../TopColleges/Management/Mumbai/TopMBACollegesInMumbai.html"><i class="fa fa-caret-right"></i>Top MBA Colleges in Mumbai</a></li>
+                            <li><a href="../../TopColleges/Management/Kolkata/TopMBACollegesInKolkata.html"><i class="fa fa-caret-right"></i>Top MBA Colleges in Kolkata</a></li>
+                            <li><a href="../../TopColleges/Management/Chennai/TopMBACollegesInChennai.html"><i class="fa fa-caret-right"></i>Top MBA Colleges in Chennai</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
 
-                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
-                            <div class="footer-col-inner">
-                                <h3 class="title">About us</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Who we are</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Press</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Blog</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Jobs</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
-                                </ul>
-                            </div><!--//footer-col-inner-->
-                        </div><!--//foooter-col-->
-                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
-                            <div class="footer-col-inner">
-                                <h3 class="title">Product</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>How it works</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>API</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Download Apps</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Pricing</a></li>
-                                </ul>
-                            </div><!--//footer-col-inner-->
-                        </div><!--//foooter-col-->
-                        <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
-                            <div class="footer-col-inner">
-                                <h3 class="title">Support</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Help</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>
-                                </ul>
-                            </div><!--//footer-col-inner-->
-                        </div><!--//foooter-col-->
+            </div>
+        </div><!--//container-->
+    </div><!--//footer-content-->
 
-                        <!-- More options ended -->
+    <!-- Scroll to top button -->
 
+    <a href="#0" class="cd-top"></a>
 
-                        <!--                <div class="footer-col connect col-md-6 col-sm-12 col-xs-12">
-                                            <div class="footer-col-inner">
-                                                <ul class="social list-inline">
-                                                    <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                    <li class="row-end"><a href="#"><i class="fa fa-rss"></i></a></li>
-                                                </ul>
-                                                <div class="form-container">
-                                                    <p class="intro">Stay up to date with the latest news and offers from Velocity</p>
-                                                    <form class="signup-form navbar-form">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" placeholder="Enter your email address">
-                                                        </div>
-                                                        <button type="submit" class="btn btn-cta btn-cta-primary">Subscribe Now</button>
-                                                    </form>
-                                                </div><!--//subscription-form-->
-                        <!--                         </div><!--//footer-col-inner-->
-                        <!--                   </div><!--//foooter-col-->
-                        <!--                    <div class="clearfix"></div>
-                                        </div><!--//row-->
-                        <!--               <div class="row has-divider">
-                                           <div class="footer-col download col-md-6 col-sm-12 col-xs-12">
-                                               <div class="footer-col-inner">
-                                                   <h3 class="title">Mobile apps</h3>
-                                                   <ul class="list-unstyled download-list">
-                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-apple"></i><span class="text">Download for iOS</span> </a></li>
-                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-android"></i><span class="text">Download for Android</span></a></li>
-                                                       <li><a class="btn btn-ghost" href="#"><i class="fa fa-windows"></i><span class="text">Windows coming soon...</span></a></li>
-                                                   </ul>
-                                               </div><!--//footer-col-inner-->
-                        <!--                    </div><!--//download-->
-                        <!--                    <div class="footer-col contact col-md-6 col-sm-12 col-xs-12">
-                                                <div class="footer-col-inner">
-                                                    <h3 class="title">Contact us</h3>
-                                                    <p class="adr clearfix">
-                                                        <i class="fa fa-map-marker pull-left"></i>
-                                                    <span class="adr-group pull-left">
-                                                        <span class="street-address">College Green</span><br>
-                                                        <span class="region">56 College Green Road</span><br>
-                                                        <span class="postal-code">BS1 XR18</span><br>
-                                                        <span class="country-name">UK</span>
-                                                    </span>
-                                                    </p>
-                                                    <p class="tel"><i class="fa fa-phone"></i>0800 123 4567</p>
-                                                    <p class="email"><i class="fa fa-envelope-o"></i><a href="#">enquires@website.com</a></p>
-                                                    <a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
-                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                                                </div><!--//footer-col-inner-->
-                        <!--                    </div><!--//contact-->
-                    </div>
-                </div><!--//container-->
-            </div><!--//footer-content-->
+    <!-- Scroll to top button ended -->
 
-            <!-- Scroll to top button -->
+    <div class="bottom-bar">
+        <div class="container">
+            <small class="copyright">Copyright @ 2015 <a href="#" target="_blank">Ubiquos Inc</a></small>
+        </div><!--//container-->
+    </div><!--//bottom-bar-->
+</footer><!--//footer-->
 
-            <a href="#0" class="cd-top"></a>
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:280px;">
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+</div>
 
-            <!-- Scroll to top button ended -->
+<script async src="//static.addtoany.com/menu/page.js"></script>
 
-            <div class="bottom-bar">
-                <div class="container">
-                    <small class="copyright">Copyright @ 2015 <a href="#" target="_blank">Ubiquos Inc</a></small>
-                    <script>var sharebutton_is_horizontal = true; document.write('<script src="//cdn.script.to/share2.js"></scr' + 'ipt>'); document.write("<div style='display: none'>");</script><a href="http://sharebutton.org/">social share buttons</a><script>document.write("</div>");</script>
-                </div><!--//container-->
-            </div><!--//bottom-bar-->
-        </footer><!--//footer-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/569b8b8427b9b5d40b68e91d/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 
-
-
-        <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="../assets/js/bootswatch.js"></script>
 </body>
 </html>
