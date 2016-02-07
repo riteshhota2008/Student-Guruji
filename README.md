@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v3.0.1 - Updated all contents for Management Colleges of Gujarat, Karnataka, Tamil Nadu.
+    
     v3.0.0 - Updated all contents for Hotel Management Colleges of all states.
     
     v2.1.9 - Updated all contents for Andhra Pradesh engineering colleges.
