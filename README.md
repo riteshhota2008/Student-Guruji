@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v2.1.9 - Updated all contents for Andhra Pradesh engineering colleges.
+    
     v2.1.8 - Updated all contents for Karnataka engineering colleges.
     
     v2.1.7 - Updated all contents for West Bengal engineering colleges.
