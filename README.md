@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v3.0.6 - Updated all contents for Medical Colleges of Gujarat, A.P, Karnataka, Tamil Nadu.
+    
     v3.0.5 - Updated all contents for Management Colleges of Pune.
     
     v3.0.4 - Updated all contents for Management Colleges of Mumbai.
