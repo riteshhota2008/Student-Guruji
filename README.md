@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v3.0.9 - Updated Exams list.
+    
     v3.0.8 - Updated all contents for Medical Colleges of U.P, Mumbai, Pune & Rajasthan.
     
     v3.0.7 - Updated all contents for Medical Colleges of Delhi, Kerala, West bengal.
