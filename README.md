@@ -8,7 +8,9 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
-    v3.1.0 - Updated Exams list for Hotel Management, Management, Medical.
+    v3.1.1 - Updated Exams list for Medical.
+    
+    v3.1.0 - Updated Exams list for Hotel Management, Management.
     
     v3.0.9 - Updated Exams list for Engineering.
     
