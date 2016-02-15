@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v3.1.5 - Updated homepage.
+    
     v3.1.4 - Updated sitemap.
     
     v3.1.3 - Completed search engine for colleges.
