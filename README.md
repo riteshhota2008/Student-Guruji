@@ -8,6 +8,8 @@ www.studentguruji.in was created by and is maintained by **Ritesh Hota**, Founde
 
 ## Changelog
 
+    v3.1.7 - Completed all Medical, Hotel Management & Management colleges.
+    
     v3.1.6 - Completed all engineering colleges.
     
     v3.1.5 - Updated homepage.
